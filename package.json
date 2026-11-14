@@ -1,0 +1,31 @@
+{
+  "name": "multica-blog",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "24.22.3",
+    "npm": "11.19.1"
+  },
+  "packageManager": "npm@11.19.1",
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1 --port 4321",
+    "build": "astro sync && astro check && astro build",
+    "test": "npm run build && vitest run && node scripts/check-reproducible.mjs",
+    "preview": "astro preview --host 127.0.0.1 --port 4321"
+  },
+  "dependencies": {
+    "@astrojs/rss": "4.0.19",
+    "astro": "7.4.12",
+    "image-size": "2.1.0",
+    "marked": "18.2.0",
+    "yaml": "2.9.1"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.12",
+    "@types/node": "24.19.2",
+    "fast-xml-parser": "5.12.1",
+    "typescript": "6.0.3",
+    "vitest": "5.1.0"
+  }
+}

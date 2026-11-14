@@ -1,0 +1,14 @@
+[
+  {
+    "id": "blog-team",
+    "name": "博客项目组",
+    "bio": "负责本项目的规格、开发与验收。",
+    "avatar": {
+      "src": "/content/authors/blog-team.png",
+      "alt": "博客项目组标识",
+      "width": 256,
+      "height": 256
+    },
+    "url": "https://github.com/asmpg/multica-blog"
+  }
+]
