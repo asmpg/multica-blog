@@ -113,14 +113,22 @@ try {
   // 内容资源：草稿独有图片不可访问；页面实际引用的公开图片仍可访问。
   const draftAsset = '/content/draft-editorial-workflow/cover.png';
   check('草稿独有图片存在于 public/', existsSync(join(root, 'public', draftAsset)), draftAsset);
-  const privateResponse = await probe(draftAsset);
-  check(`草稿独有图片 ${draftAsset} 404`, privateResponse.status === 404, String(privateResponse.status));
+  // 编码变体：下游静态服务解码后找文件，权限检查必须用同一份解释，否则 /%63ontent/ 可绕过。
+  const encoded = (path) => path.replace('/content/', '/%63ontent/');
+  for (const assetPath of [draftAsset, encoded(draftAsset)]) {
+    const response = await probe(assetPath);
+    check(`草稿独有图片 ${assetPath} 404`, response.status === 404, String(response.status));
+  }
+  const malformed = await probe('/%63ontent/%E0%A4%A');
+  check('异常编码 %63ontent/%E0%A4%A 不提供文件（4xx）', malformed.status === 400 || malformed.status === 404, String(malformed.status));
 
   const referenced = new Set([...htmlByPath.values()].flatMap((html) => [...html.matchAll(/\/content\/[^"'\s)]+/g)].map((match) => match[0])));
   check('页面引用了公开内容图片', referenced.size > 0, '未找到 /content/ 引用');
   for (const assetPath of referenced) {
-    const response = await probe(assetPath);
-    check(`公开图片 ${assetPath} 200`, response.status === 200, String(response.status));
+    for (const candidate of [assetPath, encoded(assetPath)]) {
+      const response = await probe(candidate);
+      check(`公开图片 ${candidate} 200`, response.status === 200, String(response.status));
+    }
   }
 
   if (failures.length > 0) {

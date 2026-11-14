@@ -17,7 +17,7 @@
 | `npm test` | 构建 + `vitest run` + 两次完整构建的 SHA-256 可复现检查 |
 | `npm run preview` | 预览 `dist/`，`http://localhost:4321` |
 | `npm run check:http` | 启动一次性 `astro dev`（非 watch），按 content-model §5 核对公开契约后退出 |
-| `npm run check:acceptance` | 在临时目录构建隔离 fixture，核对 6+1 分页、空集合与构建期校验失败 |
+| `npm run check:acceptance` | 在临时目录构建隔离 fixture，核对 6+1 分页、私有图编码路径、空集合与构建期校验失败 |
 
 构建不联网抓取内容；内容校验失败时 `astro build` 前即非零退出。
 
@@ -104,6 +104,7 @@ server {
 - 已存在公开路径的尾斜杠变体返回 **308**，`Location` 精确为规范路径（查询串保留）。
 - `.html` 地址、未知路径的尾斜杠变体、未知路由返回 **404**。
 - `/content/` 下只公开被 published 文章、关于页或站点默认图引用的文件；草稿/归档独有图片返回 404。
+- 请求路径按百分号解码后再判定（与下游静态服务一致），`/%63ontent/...` 之类的编码变体不能绕过同一规则；异常编码返回 4xx。
 - `/rss.xml`、`/sitemap.xml` 返回 200 与 XML Content-Type。
 
 `trailingSlash` 只在 dev 下为 `ignore`：Astro 的尾斜杠中间件会在任何插件之前直接 404，先放开再由插件统一发 308。构建产物仍是 `trailingSlash: 'never'` + `build.format: 'file'`。
@@ -116,7 +117,7 @@ server {
 
 `npm run check:acceptance` 不读写正式 `content/`：把 `tests/fixtures/acceptance/` 复制到临时目录，连同 `src`/`lib`/`styles`/构建配置一起真实构建，再按静态主机契约提供 HTTP。覆盖：
 
-- 7 篇 published（含同日两篇）、1 篇 draft、1 篇 archived、仅被私有文章使用的标签；归档 6+1、顺序、不重不漏、第二页 canonical 自指、越界页码 404、私有内容与独有图片不可达。
+- 7 篇 published（含同日两篇）、1 篇 draft、1 篇 archived、仅被私有文章使用的标签；归档 6+1、顺序、不重不漏、第二页 canonical 自指、越界页码 404、私有内容与独有图片（普通与编码路径）不可达；同一 fixture 再起真实 dev 服务核对同一规则。
 - 0 篇 published：首页与归档 200 且显示“暂无文章”，空标签与第 2 页 404。
 - 缺 `title`、错误类型、非法 slug、非法日期各触发一次真实构建非零退出，日志含条目与字段。
 

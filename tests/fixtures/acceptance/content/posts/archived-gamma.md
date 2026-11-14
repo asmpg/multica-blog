@@ -7,6 +7,11 @@ publishedAt: "2026-10-01"
 authorId: blog-team
 tagSlugs:
   - private-only
+cover:
+  src: /content/archived-only.png
+  alt: 封面图
+  width: 8
+  height: 8
 ---
 
 archived-gamma 的正文。

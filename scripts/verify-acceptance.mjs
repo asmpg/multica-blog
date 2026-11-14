@@ -1,4 +1,4 @@
-import { execFileSync } from 'node:child_process';
+import { execFileSync, spawn } from 'node:child_process';
 import { cpSync, existsSync, mkdtempSync, readFileSync, rmSync, statSync, symlinkSync, writeFileSync } from 'node:fs';
 import { createServer } from 'node:http';
 import { createServer as createNetServer } from 'node:net';
@@ -9,7 +9,8 @@ import { extname, join } from 'node:path';
  * 隔离的端到端验收：不读写正式 content/，全部在临时目录构建。
  *
  * 1. 7 篇 published（含同日两篇）+ 1 draft + 1 archived + 仅私有文章标签：
- *    真实构建后按 Nginx 契约提供 HTTP，核对 6+1 分页、顺序、不重不漏、第二页 canonical、越界 404、私有内容不可达。
+ *    真实构建后按 Nginx 契约提供 HTTP，核对 6+1 分页、顺序、不重不漏、第二页 canonical、越界 404、私有内容不可达；
+ *    再对同一份 fixture 起真实 dev 服务，核对草稿/归档独有图的普通与编码路径都 404、共享图片仍 200。
  * 2. 空集合（0 published）：首页/归档 200 且显示“暂无文章”，空标签与第 2 页 404。
  * 3. 缺 title / 错误类型 / 非法 slug / 非法日期：真实构建非零退出，日志含条目与字段。
  *
@@ -33,6 +34,19 @@ function tempDir(prefix) {
   const dir = mkdtempSync(join(tmpdir(), prefix));
   temps.push(dir);
   return dir;
+}
+
+// `/%63ontent/...`：下游静态服务解码后仍指向同一文件，权限检查必须给出同一结论。
+const encoded = (path) => path.replace('/content/', '/%63ontent/');
+
+function freePort() {
+  return new Promise((resolve) => {
+    const probe = createNetServer();
+    probe.listen(0, '127.0.0.1', () => {
+      const { port } = probe.address();
+      probe.close(() => resolve(port));
+    });
+  });
 }
 
 function prepareSite(mutate) {
@@ -68,13 +82,19 @@ const TYPES = {
 };
 
 // 与 ADR 0001 §7.2 的静态主机契约一致：extensionless → <path>.html；尾斜杠与 .html 不是成功 URL。
+// 路径按百分号解码后解释（Nginx 同样先解码），异常编码直接 404。
 async function serve(dist) {
   const server = createServer((request, response) => {
-    const pathname = decodeURI((request.url ?? '/').split('?')[0]);
     const notFound = () => {
       response.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
       response.end('404');
     };
+    let pathname;
+    try {
+      pathname = decodeURIComponent((request.url ?? '/').split('?')[0]);
+    } catch {
+      return notFound();
+    }
     if (pathname !== '/' && (pathname.endsWith('/') || pathname.endsWith('.html'))) return notFound();
     const candidates = pathname === '/' ? ['index.html'] : [pathname.slice(1), `${pathname.slice(1)}.html`];
     const file = candidates.map((candidate) => join(dist, candidate)).find((candidate) => existsSync(candidate) && statSync(candidate).isFile());
@@ -82,13 +102,7 @@ async function serve(dist) {
     response.writeHead(200, { 'Content-Type': TYPES[extname(file)] ?? 'application/octet-stream' });
     response.end(readFileSync(file));
   });
-  const port = await new Promise((resolve) => {
-    const probe = createNetServer();
-    probe.listen(0, '127.0.0.1', () => {
-      const { port } = probe.address();
-      probe.close(() => resolve(port));
-    });
-  });
+  const port = await freePort();
   await new Promise((resolve) => server.listen(port, '127.0.0.1', resolve));
   return { base: `http://127.0.0.1:${port}`, close: () => new Promise((resolve) => server.close(resolve)) };
 }
@@ -133,11 +147,19 @@ try {
   const home = await get('/');
   check('首页 6 篇且顺序一致', JSON.stringify(postLinks(home.body)) === JSON.stringify(expectedOrder.slice(0, 6)), JSON.stringify(postLinks(home.body)));
 
-  for (const path of ['/posts/draft-private', '/posts/archived-gamma', '/tags/private-only', '/tags/empty-tag', '/content/draft-only.png']) {
+  for (const path of ['/posts/draft-private', '/posts/archived-gamma', '/tags/private-only', '/tags/empty-tag']) {
     const page = await get(path);
     check(`${path} 404`, page.status === 404, String(page.status));
   }
-  for (const path of ['/tags/architecture', '/content/shared.png']) {
+  const architectureTag = await get('/tags/architecture');
+  check('/tags/architecture 200', architectureTag.status === 200, String(architectureTag.status));
+
+  // 私有资源：普通路径与百分号编码变体都不可访问，共享图片两种写法都可用。
+  for (const path of ['/content/draft-only.png', encoded('/content/draft-only.png'), '/content/archived-only.png', encoded('/content/archived-only.png'), '/%63ontent/%E0%A4%A']) {
+    const page = await get(path);
+    check(`${path} 404`, page.status === 404, String(page.status));
+  }
+  for (const path of ['/content/shared.png', encoded('/content/shared.png')]) {
     const page = await get(path);
     check(`${path} 200`, page.status === 200, String(page.status));
   }
@@ -152,6 +174,46 @@ try {
   check('sitemap 13 条公开路由', locs.length === 13, String(locs.length));
   check('sitemap 不含私有路径', !locs.some((path) => /draft-private|archived-gamma|private-only|empty-tag/.test(path)), JSON.stringify(locs));
   await server.close();
+
+  // 同一份 fixture 上的真实 dev 服务：静态产物靠构建裁剪，dev 靠 dev-public-contract 插件，
+  // 编码路径不能绕过它。
+  const devPort = await freePort();
+  const devOrigin = `http://127.0.0.1:${devPort}`;
+  const dev = spawn(process.execPath, [astroBin, 'dev', '--port', String(devPort), '--host', '127.0.0.1', '--ignore-lock'], {
+    cwd: site,
+    env: { ...process.env, SITE_URL: devOrigin },
+    stdio: ['ignore', 'pipe', 'pipe'],
+  });
+  let devLog = '';
+  dev.stdout.on('data', (chunk) => (devLog += chunk));
+  dev.stderr.on('data', (chunk) => (devLog += chunk));
+  try {
+    const deadline = Date.now() + 60_000;
+    let ready = false;
+    while (!ready && Date.now() < deadline) {
+      if (dev.exitCode !== null) throw new Error(`fixture dev 提前退出：\n${devLog}`);
+      try {
+        ready = (await fetch(`${devOrigin}/`)).ok;
+      } catch {
+        // 尚未监听。
+      }
+      if (!ready) await new Promise((resolve) => setTimeout(resolve, 250));
+    }
+    if (!ready) throw new Error(`fixture dev 60s 内未就绪：\n${devLog}`);
+    for (const path of ['/content/draft-only.png', encoded('/content/draft-only.png'), '/content/archived-only.png', encoded('/content/archived-only.png')]) {
+      const status = (await fetch(`${devOrigin}${path}`, { redirect: 'manual' })).status;
+      check(`dev ${path} 404`, status === 404, String(status));
+    }
+    for (const path of ['/content/shared.png', encoded('/content/shared.png')]) {
+      const status = (await fetch(`${devOrigin}${path}`, { redirect: 'manual' })).status;
+      check(`dev ${path} 200`, status === 200, String(status));
+    }
+  } finally {
+    if (dev.exitCode === null) {
+      dev.kill('SIGTERM');
+      await new Promise((resolve) => dev.once('exit', resolve));
+    }
+  }
 
   // 2. 空集合
   const emptySite = prepareSite((dir) => {
@@ -203,7 +265,7 @@ try {
     for (const failure of failures) console.error(`  - ${failure}`);
     process.exitCode = 1;
   } else {
-    console.log('验收检查通过：6+1 分页与顺序、第二页 canonical、越界 404、私有内容不可达、空集合 200/404、4 类构建期校验非零退出。');
+    console.log('验收检查通过：6+1 分页与顺序、第二页 canonical、越界 404、私有内容与编码路径不可达、共享图片可用、空集合 200/404、4 类构建期校验非零退出。');
   }
 } finally {
   for (const dir of temps) rmSync(dir, { recursive: true, force: true });

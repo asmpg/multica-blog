@@ -1,5 +1,5 @@
 import { rmSync, readdirSync, rmdirSync, statSync } from 'node:fs';
-import { join } from 'node:path';
+import { join, posix } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'astro/config';
 import { createSiteView } from './lib/site.ts';
@@ -73,7 +73,14 @@ function devPublicContract(root) {
       });
       server.middlewares.use(async (request, response, next) => {
         if (request.method !== 'GET' && request.method !== 'HEAD') return next();
-        const [pathname = '/', search] = (request.url ?? '/').split('?');
+        const [rawPath = '/', search] = (request.url ?? '/').split('?');
+        // 下游静态服务按解码后的路径找文件，这里必须同样解释：`/%63ontent/...` 曾绕过资源过滤。
+        let pathname;
+        try {
+          pathname = posix.normalize(decodeURIComponent(rawPath));
+        } catch {
+          return notFound(response); // 异常编码不进入路由
+        }
         const view = await load();
         if (!view) return next();
 
