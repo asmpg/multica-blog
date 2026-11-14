@@ -618,7 +618,25 @@ async function checkFocus(page, pageName, width) {
     }
   }
   // 跳至正文未聚焦时被移出视口，只能聚焦后测命中区
-  const skipLink = await page.evaluate(`window.__ui.measureActive()`);
+  // 焦点可能在循环里落到 body（Tab 走到浏览器 UI），重新从文档起点定位“跳至正文”
+  let skipLinkTarget = false;
+  for (let attempt = 0; attempt < 3 && !skipLinkTarget; attempt += 1) {
+    // blur 会保留“顺序焦点导航起点”，必须把起点重置到 body，否则 Tab 会从上次位置继续
+    await page.evaluate(`(() => {
+      document.activeElement && document.activeElement.blur();
+      window.scrollTo(0, 0);
+      document.body.setAttribute('tabindex', '-1');
+      document.body.focus();
+      document.body.removeAttribute('tabindex');
+      return true;
+    })()`);
+    await page.pressTab();
+    skipLinkTarget = await page.evaluate(
+      `(() => { const el = document.activeElement; return !!el && el.classList.contains('skip-link'); })()`,
+    );
+  }
+  const skipLink = skipLinkTarget ? await page.evaluate(`window.__ui.measureActive()`) : null;
+  if (!skipLinkTarget) failures.push('首个 Tab 未落在“跳至正文”链接上');
   if (!skipLink || !skipLink.hittable || skipLink.width < MIN_TARGET || skipLink.height < MIN_TARGET) {
     failures.push(
       `跳至正文聚焦态命中区 ${skipLink ? `${skipLink.width.toFixed(1)}×${skipLink.height.toFixed(1)}` : '不可测'}`,

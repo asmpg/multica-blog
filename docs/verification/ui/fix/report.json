@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T07:10:31.828Z",
+  "generatedAt": "2026-11-14T07:29:06.718Z",
   "viewports": [
     375,
     760,
@@ -29,7 +29,7 @@
       "path": "/about"
     }
   ],
-  "origin": "http://127.0.0.1:50347",
+  "origin": "http://127.0.0.1:54707",
   "devToolbarHidden": false,
   "total": 103,
   "failed": 0,
@@ -111,8 +111,8 @@
         ],
         "skipLink": {
           "hittable": true,
-          "width": 358,
-          "height": 400
+          "width": 84,
+          "height": 44
         },
         "failures": []
       }
@@ -193,8 +193,8 @@
         ],
         "skipLink": {
           "hittable": true,
-          "width": 358,
-          "height": 400
+          "width": 84,
+          "height": 44
         },
         "failures": []
       }
@@ -270,8 +270,8 @@
         ],
         "skipLink": {
           "hittable": true,
-          "width": 358,
-          "height": 400
+          "width": 84,
+          "height": 44
         },
         "failures": []
       }
@@ -349,8 +349,8 @@
         ],
         "skipLink": {
           "hittable": true,
-          "width": 358,
-          "height": 400
+          "width": 84,
+          "height": 44
         },
         "failures": []
       }
@@ -421,8 +421,8 @@
         ],
         "skipLink": {
           "hittable": true,
-          "width": 374,
-          "height": 400
+          "width": 84,
+          "height": 44
         },
         "failures": []
       }
@@ -504,8 +504,8 @@
         ],
         "skipLink": {
           "hittable": true,
-          "width": 400,
-          "height": 400
+          "width": 84,
+          "height": 44
         },
         "failures": []
       }
@@ -586,8 +586,8 @@
         ],
         "skipLink": {
           "hittable": true,
-          "width": 400,
-          "height": 400
+          "width": 84,
+          "height": 44
         },
         "failures": []
       }
@@ -663,8 +663,8 @@
         ],
         "skipLink": {
           "hittable": true,
-          "width": 400,
-          "height": 400
+          "width": 84,
+          "height": 44
         },
         "failures": []
       }
@@ -742,8 +742,8 @@
         ],
         "skipLink": {
           "hittable": true,
-          "width": 400,
-          "height": 400
+          "width": 84,
+          "height": 44
         },
         "failures": []
       }
@@ -814,8 +814,8 @@
         ],
         "skipLink": {
           "hittable": true,
-          "width": 400,
-          "height": 400
+          "width": 84,
+          "height": 44
         },
         "failures": []
       }
@@ -897,8 +897,8 @@
         ],
         "skipLink": {
           "hittable": true,
-          "width": 400,
-          "height": 400
+          "width": 84,
+          "height": 44
         },
         "failures": []
       }
@@ -979,8 +979,8 @@
         ],
         "skipLink": {
           "hittable": true,
-          "width": 400,
-          "height": 400
+          "width": 84,
+          "height": 44
         },
         "failures": []
       }
@@ -1056,8 +1056,8 @@
         ],
         "skipLink": {
           "hittable": true,
-          "width": 400,
-          "height": 400
+          "width": 84,
+          "height": 44
         },
         "failures": []
       }
@@ -1207,8 +1207,8 @@
         ],
         "skipLink": {
           "hittable": true,
-          "width": 400,
-          "height": 400
+          "width": 84,
+          "height": 44
         },
         "failures": []
       }
@@ -1290,8 +1290,8 @@
         ],
         "skipLink": {
           "hittable": true,
-          "width": 400,
-          "height": 400
+          "width": 84,
+          "height": 44
         },
         "failures": []
       }
@@ -1372,8 +1372,8 @@
         ],
         "skipLink": {
           "hittable": true,
-          "width": 400,
-          "height": 400
+          "width": 84,
+          "height": 44
         },
         "failures": []
       }
@@ -1449,8 +1449,8 @@
         ],
         "skipLink": {
           "hittable": true,
-          "width": 400,
-          "height": 400
+          "width": 84,
+          "height": 44
         },
         "failures": []
       }
@@ -1528,8 +1528,8 @@
         ],
         "skipLink": {
           "hittable": true,
-          "width": 400,
-          "height": 400
+          "width": 84,
+          "height": 44
         },
         "failures": []
       }
@@ -1600,8 +1600,8 @@
         ],
         "skipLink": {
           "hittable": true,
-          "width": 400,
-          "height": 400
+          "width": 84,
+          "height": 44
         },
         "failures": []
       }
@@ -1683,8 +1683,8 @@
         ],
         "skipLink": {
           "hittable": true,
-          "width": 400,
-          "height": 400
+          "width": 84,
+          "height": 44
         },
         "failures": []
       }
@@ -1765,8 +1765,8 @@
         ],
         "skipLink": {
           "hittable": true,
-          "width": 400,
-          "height": 400
+          "width": 84,
+          "height": 44
         },
         "failures": []
       }
@@ -1842,8 +1842,8 @@
         ],
         "skipLink": {
           "hittable": true,
-          "width": 400,
-          "height": 400
+          "width": 84,
+          "height": 44
         },
         "failures": []
       }
@@ -1921,8 +1921,8 @@
         ],
         "skipLink": {
           "hittable": true,
-          "width": 400,
-          "height": 400
+          "width": 84,
+          "height": 44
         },
         "failures": []
       }
@@ -1993,8 +1993,8 @@
         ],
         "skipLink": {
           "hittable": true,
-          "width": 400,
-          "height": 400
+          "width": 84,
+          "height": 44
         },
         "failures": []
       }
