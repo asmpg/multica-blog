@@ -1,0 +1,109 @@
+{
+  "date": "2026-11-14",
+  "timezone": "Asia/Shanghai",
+  "browser": "Chrome 157.0.8103.51",
+  "platform": "macOS",
+  "deviceScaleFactor": 1,
+  "viewportHeight": 1000,
+  "homeHttpRedirect": {
+    "status": 307,
+    "to": "/en"
+  },
+  "browserHomeUrl": "https://www.oiloil.org/",
+  "resources": [
+    {
+      "file": "home.html",
+      "url": "https://www.oiloil.org/",
+      "finalUrl": "https://www.oiloil.org/en",
+      "acquiredAt": "2026-11-14T04:31:17.131Z",
+      "bytes": 200217,
+      "sha256": "3cc63a889bcb0cebd65c74330aa21c9d400b85c7cc1b298f2634a41336664aed"
+    },
+    {
+      "file": "article.html",
+      "url": "https://www.oiloil.org/articles/lark-cli-personal-workbench",
+      "finalUrl": "https://www.oiloil.org/articles/lark-cli-personal-workbench",
+      "acquiredAt": "2026-11-14T04:32:21.352Z",
+      "bytes": 48245,
+      "sha256": "2b3103ccdf132418cc2c8101a1f018dc1a3171d1a3568de03b87db6fde786ca8"
+    },
+    {
+      "file": "list.html",
+      "url": "https://www.oiloil.org/en/articles",
+      "finalUrl": "https://www.oiloil.org/en/articles",
+      "acquiredAt": "2026-11-14T04:32:22.914Z",
+      "bytes": 303605,
+      "sha256": "4c12a296a3779247766eebdf04b47b0a5207f88ea82ef2bb851a52ad9a572d9b"
+    },
+    {
+      "file": "base.css",
+      "url": "https://www.oiloil.org/_next/static/css/9c1ceec4ce7ae3dd.css?dpl=dpl_DdSWSLEPPMSJYfth5WDyJ8tKtHXf",
+      "finalUrl": "https://www.oiloil.org/_next/static/css/9c1ceec4ce7ae3dd.css?dpl=dpl_DdSWSLEPPMSJYfth5WDyJ8tKtHXf",
+      "acquiredAt": "2026-11-14T04:32:25.840Z",
+      "bytes": 49867,
+      "sha256": "dd0d6b35b576c8365a2c664ef48b8345ae09f8bf2463d08a4745d345c2110fd5"
+    },
+    {
+      "file": "components.css",
+      "url": "https://www.oiloil.org/_next/static/css/9e9e15dc9c706fd7.css?dpl=dpl_DdSWSLEPPMSJYfth5WDyJ8tKtHXf",
+      "finalUrl": "https://www.oiloil.org/_next/static/css/9e9e15dc9c706fd7.css?dpl=dpl_DdSWSLEPPMSJYfth5WDyJ8tKtHXf",
+      "acquiredAt": "2026-11-14T04:32:27.449Z",
+      "bytes": 51751,
+      "sha256": "6f74316b94453119fdc002c45072373089ab809fe756bc2de9559a16001ce03e"
+    },
+    {
+      "file": "computed.json",
+      "bytes": 269105,
+      "sha256": "374f08c4f2b5acf3f192d535ebdbfc1c194011b2ab1457765860597b57b43185",
+      "derived": true
+    },
+    {
+      "file": "key-rules.json",
+      "bytes": 28354,
+      "sha256": "f66460e1c741c62ca0dc183edfbf3e77bee479a6f7155b964078483812a6fa88",
+      "derived": true
+    },
+    {
+      "file": "states.json",
+      "bytes": 37326,
+      "sha256": "5d106fb17278b1ded0562fb53996242fd8cda90ee74fedb72429ae46167c839a",
+      "derived": true
+    },
+    {
+      "file": "cascade.json",
+      "bytes": 3655,
+      "sha256": "d5b6dacaa908d4f05548d659814388391619ec287dc282f7248dd6cc29f4ec3c",
+      "derived": true
+    },
+    {
+      "file": "home-http-headers.txt",
+      "bytes": 829,
+      "sha256": "ca18de2ba5029320d856a19c2506a5c677373b1014f53f019006f14efdd53902",
+      "derived": true
+    },
+    {
+      "file": "home-1440.png",
+      "bytes": 268655,
+      "sha256": "2e3eae67b39caafe92852b4377c0db1ddbc1420476c77cbb4a5a6235382b6867",
+      "derived": true
+    },
+    {
+      "file": "article-1440.png",
+      "bytes": 508850,
+      "sha256": "d48f67dea12a8b0a8b665f91bbb74b3256551c662ccbcc28f0cfe8f4f7f5af7c",
+      "derived": true
+    },
+    {
+      "file": "list-1440.png",
+      "bytes": 608459,
+      "sha256": "deefd318d556ce974f483e6618c82069323aa44c5ae75a202a2232d430f4c37c",
+      "derived": true
+    },
+    {
+      "file": "list-375.png",
+      "bytes": 263512,
+      "sha256": "6b9ac3ec72230cbe7bc686ed0f07b6aedc32f72fcdfb0d4a08496b13a4d809de",
+      "derived": true
+    }
+  ]
+}
