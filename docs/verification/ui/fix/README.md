@@ -18,10 +18,13 @@ node scripts/check-ui.mjs                        # 只跑断言，退出码 0/1
 node scripts/check-ui.mjs \
   --screenshots docs/verification/ui/fix \
   --json docs/verification/ui/fix/report.json   # 同时落截图与逐项 JSON
+node scripts/check-ui.mjs --origin http://localhost:41030   # 对运行中的预览环境复测
 ```
 
-- 脚本自带静态文件服务器（直接服务 `dist/`）与 headless Chrome 驱动，不依赖预览进程，可在任意干净 checkout 复现。
+- 默认直接服务 `dist/`（产物即被测对象，不依赖任何进程）；`--origin` 可对 `astro dev` / `npm run preview` 起的地址复测。
+- 脚本自带静态文件服务器与 headless Chrome 驱动（CDP），无额外依赖，可在任意干净 checkout 复现。
 - 需要本机 Chrome/Chromium，可用 `CHROME_PATH` 指定；找不到会明确报错，不静默跳过。
+- 对 `astro dev` 复测时脚本会隐藏 `astro-dev-toolbar`（开发工具条，不属于站点产物，会浮在页脚上方遮住链接），并在输出里注明。要让预览也不显示它，需在根配置设 `devToolbar: { enabled: false }`（`astro.config.mjs` 属 Dev1 文件边界，本次未改）。
 
 ## 断言覆盖（103 项 = 5 视口 × 5 页面 × 4 类 + 3 个状态机）
 
@@ -37,7 +40,7 @@ node scripts/check-ui.mjs \
 
 ## 本次结果（2026-11-14，Chrome 157，DPR 1，视口高 1000px）
 
-`103/103 项通过`，逐项见 `report.json`。
+`103/103 项通过`，逐项见 `report.json`（产物）与 `report-preview-41030.json`（`astro dev` 预览环境 `http://localhost:41030` 的同一套断言）。
 
 | 场景 | 修复前（METI-6 复现） | 修复后实测 |
 | --- | --- | --- |

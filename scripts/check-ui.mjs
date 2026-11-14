@@ -9,6 +9,7 @@
  *
  *   node scripts/check-ui.mjs
  *   node scripts/check-ui.mjs --screenshots docs/verification/ui/fix --json docs/verification/ui/fix/report.json
+ *   node scripts/check-ui.mjs --origin http://localhost:41030   # 对运行中的预览环境复测
  *
  * 需要本机 Chrome/Chromium。可用 CHROME_PATH 指定可执行文件。
  * 退出码 0 表示全部通过，1 表示存在失败项。
@@ -61,6 +62,7 @@ const argValue = (flag) => {
 const SHOT_DIR = argValue('--screenshots') ? resolve(ROOT, argValue('--screenshots')) : null;
 const JSON_PATH = argValue('--json') ? resolve(ROOT, argValue('--json')) : null;
 const ONLY = argValue('--only');
+const EXTERNAL_ORIGIN = argValue('--origin');
 
 /* --------------------------------------------------------- static server */
 
@@ -414,6 +416,23 @@ class Page {
     return this.cdp.send(method, params, this.sessionId);
   }
 
+  /**
+   * Astro dev 服务器会注入开发工具条（astro-dev-toolbar），它是开发工具、不属于站点产物，
+   * 但会浮在页面底部挡住页脚链接。对运行中的 dev 预览复测时先隐藏它，
+   * 避免把工具条遮挡当成站点缺陷；真实产物（dist / npm run preview）没有该元素。
+   */
+  async hideDevToolbar() {
+    return this.evaluate(`(() => {
+      const toolbar = document.querySelector('astro-dev-toolbar');
+      if (!toolbar) return false;
+      const style = document.createElement('style');
+      style.id = 'meti9-hide-dev-toolbar';
+      style.textContent = 'astro-dev-toolbar{display:none!important}';
+      document.head.appendChild(style);
+      return true;
+    })()`);
+  }
+
   async navigate(path) {
     const loaded = new Promise((done) => {
       const listener = (params, sessionId) => {
@@ -424,6 +443,8 @@ class Page {
     await this.send('Page.navigate', { url: `${this.origin}${path}` });
     await Promise.race([loaded, sleep(10000)]);
     await sleep(120);
+    const hadToolbar = await this.hideDevToolbar();
+    if (hadToolbar) devToolbarHidden = true;
     await this.evaluate(PAGE_LIB);
   }
 
@@ -507,6 +528,7 @@ class Page {
 
 /* ---------------------------------------------------------------- checks */
 
+let devToolbarHidden = false;
 const results = [];
 function record(check, ok, detail) {
   results.push({ check, ok, detail });
@@ -793,10 +815,17 @@ async function checkTouchHover(page) {
 /* ------------------------------------------------------------------ main */
 
 async function main() {
-  if (!existsSync(join(DIST, 'index.html'))) {
-    throw new Error('未找到 dist/index.html，请先运行 npm run build');
+  // 默认直接服务 dist/（与产物一致、不依赖进程）；--origin 可对运行中的预览环境复测。
+  let server = null;
+  let origin = EXTERNAL_ORIGIN?.replace(/\/$/, '');
+  if (!origin) {
+    if (!existsSync(join(DIST, 'index.html'))) {
+      throw new Error('未找到 dist/index.html，请先运行 npm run build');
+    }
+    ({ server, origin } = await startStaticServer());
+  } else if (!/^https?:\/\//.test(origin)) {
+    throw new Error(`--origin 需要完整 URL，例如 http://localhost:41030`);
   }
-  const { server, origin } = await startStaticServer();
   const chrome = await launchChrome();
   const cdp = await Cdp.connect(chrome.wsUrl);
   const { targetId } = await cdp.send('Target.createTarget', { url: 'about:blank' });
@@ -866,7 +895,14 @@ async function main() {
     page.send('Page.close').catch(() => {});
     cdp.close();
     chrome.cleanup();
-    server.close();
+    server?.close();
+  }
+
+  if (devToolbarHidden) {
+    console.log(
+      'note: 检测到 Astro 开发工具条（astro-dev-toolbar），已隐藏后测量；它是 dev 服务器注入的开发工具，' +
+        '不属于站点产物，但会浮在页脚上方遮挡链接。要移除请让根配置设置 devToolbar: { enabled: false }。',
+    );
   }
 
   const failures = results.filter((entry) => !entry.ok);
@@ -892,6 +928,8 @@ async function main() {
           generatedAt: new Date().toISOString(),
           viewports: VIEWPORTS,
           pages: PAGES,
+          origin: origin,
+          devToolbarHidden,
           total: results.length,
           failed: failures.length,
           results,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T06:58:07.466Z",
+  "generatedAt": "2026-11-14T07:10:31.828Z",
   "viewports": [
     375,
     760,
@@ -29,6 +29,8 @@
       "path": "/about"
     }
   ],
+  "origin": "http://127.0.0.1:50347",
+  "devToolbarHidden": false,
   "total": 103,
   "failed": 0,
   "results": [
