@@ -45,6 +45,29 @@ a {
   text-decoration: none;
 }
 
+/*
+ * N：交互命中区最小 44×44（§8）。
+ * 用居中伪元素按需扩展到 44×44：盒本身小于 44 时四边等量外扩，
+ * 不放大文字、不改规格里的 gap 与字号；盒本身已足够大时不额外外扩，
+ * 以免不必要的命中区互相覆盖。
+ * 伪元素是链接自身的一部分，命中后仍走该链接，不产生第二个可聚焦节点。
+ */
+.tap {
+  position: relative;
+}
+
+.tap::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  min-width: 44px;
+  min-height: 44px;
+  transform: translate(-50%, -50%);
+}
+
 /* ---- 跳至正文：默认视觉隐藏，聚焦后展示（不被 clip） ---- */
 .skip-link {
   position: absolute;
@@ -215,15 +238,6 @@ main {
   transition: var(--motion-nav);
 }
 
-/* N：页头/页脚/品牌链接的命中区补足 44×44，不改变文字与 gap */
-.site-brand::after,
-.site-nav a::after,
-.site-footer a::after {
-  content: "";
-  position: absolute;
-  inset: -12px -7px;
-}
-
 .site-footer a:hover,
 .site-footer a:focus-visible {
   color: var(--color-ink);
@@ -233,20 +247,6 @@ main {
 :where(a, button, [tabindex]):focus-visible {
   outline: 2px solid var(--color-ink);
   outline-offset: 2px;
-}
-
-/*
- * N：链接可点击区域最小 44×44px，靠不可见的命中区扩展，
- * 不放大文字、不改变卡片内部 gap。
- */
-.tap {
-  position: relative;
-}
-
-.tap::after {
-  content: "";
-  position: absolute;
-  inset: -12px -4px;
 }
 
 /* ---- 页面骨架公用：列表 section / label / 空态 ---- */
@@ -280,7 +280,12 @@ main {
   color: var(--color-secondary);
 }
 
-/* ---- 运动降级：reduce 时 10ms，且不位移/不缩放/不移动箭头 ---- */
+/*
+ * 运动降级（§8）：
+ *   - 通用 duration 归零（reduce 时 10ms）在本文件，因为它是全站性的；
+ *   - 卡片/箭头“不位移、不缩放”的覆盖必须写在 components.css 里对应组件规则之后，
+ *     否则同级选择器按源序被后面的组件规则盖掉（METI-6 复现的缺陷）。
+ */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -293,34 +298,6 @@ main {
   html {
     scroll-behavior: auto;
   }
-
-  .acard:hover,
-  .acard:focus-within {
-    transform: none;
-  }
-
-  .acard:hover .acard-cover img,
-  .acard:focus-within .acard-cover img {
-    transform: none;
-  }
-
-  .more:hover .more-arrow,
-  .more:focus-visible .more-arrow {
-    transform: none;
-  }
-}
-
-/* ---- 触摸设备：hover:none 不保留卡片升起/阴影/封面放大 ---- */
-@media (hover: none) {
-  .acard:hover {
-    transform: none;
-    box-shadow: var(--shadow-rest);
-    border-color: var(--color-line);
-  }
-
-  .acard:hover .acard-cover img {
-    transform: none;
-  }
 }
 
 @media (max-width: 760px) {
@@ -331,6 +308,18 @@ main {
 
   .site-nav {
     gap: var(--space-mobile-nav);
+  }
+
+  /*
+   * N：窄屏导航文字 10px（2 字 20px）、gap 14px。两个相邻命中区若各向外扩 12px
+   * 会重叠 10px，后一个会盖住前一个的实际命中区（实测只剩 34×44），
+   * 与“至少 44×44 且不重叠误触”不可同时成立。
+   * 按 §8「通过布局命中区实现」，把链接盒本身撑到 44×44，字号与 gap 令牌不变。
+   * 宽屏（>760）文字 14px、gap 24px，伪元素外扩不重叠，不需要此项。
+   */
+  .site-nav a {
+    min-width: 44px;
+    justify-content: center;
   }
 
   .site-footer {
