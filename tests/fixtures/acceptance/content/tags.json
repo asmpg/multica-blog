@@ -1,0 +1,21 @@
+[
+  {
+    "slug": "architecture",
+    "name": "架构",
+    "description": "架构记录。"
+  },
+  {
+    "slug": "design",
+    "name": "设计"
+  },
+  {
+    "slug": "private-only",
+    "name": "私有",
+    "description": "只被草稿/归档文章使用的标签。"
+  },
+  {
+    "slug": "empty-tag",
+    "name": "空标签",
+    "description": "已注册但没有公开文章。"
+  }
+]

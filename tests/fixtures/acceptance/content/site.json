@@ -1,0 +1,12 @@
+{
+  "name": "验收博客",
+  "description": "分页与空集合验收用的隔离站点。",
+  "language": "zh-CN",
+  "defaultAuthorId": "blog-team",
+  "defaultOgImage": {
+    "src": "/content/pixel.png",
+    "alt": "默认 OG 图",
+    "width": 8,
+    "height": 8
+  }
+}
