@@ -44,10 +44,71 @@ function pruneContentAssets() {
   };
 }
 
+function notFound(response) {
+  response.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
+  response.end('<!doctype html><meta charset="utf-8"><title>页面不存在</title><h1>页面不存在</h1><p>请求的页面不存在。</p>');
+}
+
+// 生产由 Nginx 执行 content-model §5 的公开契约（见 docs/development.md）。
+// 开发服务器默认把 public/ 原样公开，并把 `.html` 当成可访问路由；这里在请求进入 Astro 路由前执行同一份契约，
+// 使本地预览与部署行为一致。预览（astro preview）只读已裁剪的 dist/，不需要这段。
+function devPublicContract(root) {
+  let viewPromise;
+  const load = () => {
+    viewPromise ??= createSiteView(root, process.env.SITE_URL).then(
+      (view) => ({
+        routes: new Set(view.routes.map((route) => route.path)),
+        assets: new Set(view.publicAssets),
+      }),
+      () => undefined, // 内容校验失败时让 Astro 自己报错
+    );
+    return viewPromise;
+  };
+
+  return {
+    name: 'dev-public-contract',
+    configureServer(server) {
+      server.watcher.on('all', () => {
+        viewPromise = undefined;
+      });
+      server.middlewares.use(async (request, response, next) => {
+        if (request.method !== 'GET' && request.method !== 'HEAD') return next();
+        const [pathname = '/', search] = (request.url ?? '/').split('?');
+        const view = await load();
+        if (!view) return next();
+
+        // `.html` 不是外部成功 URL。
+        if (pathname.endsWith('.html')) return notFound(response);
+
+        // 已存在公开路径的尾斜杠变体 308 到规范路径；未知路径仍 404。
+        if (pathname !== '/' && pathname.endsWith('/')) {
+          const canonical = pathname.replace(/\/+$/, '');
+          if (view.routes.has(canonical)) {
+            response.writeHead(308, { Location: search ? `${canonical}?${search}` : canonical });
+            response.end();
+            return;
+          }
+          return notFound(response);
+        }
+
+        // 内容资源只公开被 published/关于页/站点默认图引用的文件。
+        if (pathname.startsWith('/content/') && !view.assets.has(pathname)) return notFound(response);
+
+        next();
+      });
+    },
+  };
+}
+
+// `astro dev` 的尾斜杠中间件在路由前直接 404，早于任何插件中间件，所以 dev 先放开（ignore），
+// 再由 devPublicContract 统一发 308；构建产物固定 never（ADR 0001 §4.4）。
+const isDev = process.argv[2] === 'dev';
+
 export default defineConfig({
   site: normalizeSiteUrl(process.env.SITE_URL),
   output: 'static',
-  trailingSlash: 'never',
+  trailingSlash: isDev ? 'ignore' : 'never',
   build: { format: 'file' },
   integrations: [pruneContentAssets()],
+  vite: { plugins: [devPublicContract(process.cwd())] },
 });

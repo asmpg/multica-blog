@@ -16,6 +16,8 @@
 | `npm run build` | `astro sync && astro check && astro build`，产出 `dist/` |
 | `npm test` | 构建 + `vitest run` + 两次完整构建的 SHA-256 可复现检查 |
 | `npm run preview` | 预览 `dist/`，`http://localhost:4321` |
+| `npm run check:http` | 启动一次性 `astro dev`（非 watch），按 content-model §5 核对公开契约后退出 |
+| `npm run check:acceptance` | 在临时目录构建隔离 fixture，核对 6+1 分页、空集合与构建期校验失败 |
 
 构建不联网抓取内容；内容校验失败时 `astro build` 前即非零退出。
 
@@ -94,6 +96,30 @@ server {
 - `/rss.xml`、`/sitemap.xml` 返回 200 与 XML Content-Type。
 - 发布时整份切换 `dist/`，不要只上传部分文件。
 
+## 本地预览的 HTTP 契约
+
+`astro dev` 默认把 `public/` 原样公开，并把 `about` 也当成 `/about.html` 可访问，和部署后的 Nginx 行为不一致。`astro.config.mjs` 的 `dev-public-contract` 插件在请求进入 Astro 路由前执行同一份契约：
+
+- 公开路由（来自 `lib` 的同一份路由清单）返回 200。
+- 已存在公开路径的尾斜杠变体返回 **308**，`Location` 精确为规范路径（查询串保留）。
+- `.html` 地址、未知路径的尾斜杠变体、未知路由返回 **404**。
+- `/content/` 下只公开被 published 文章、关于页或站点默认图引用的文件；草稿/归档独有图片返回 404。
+- `/rss.xml`、`/sitemap.xml` 返回 200 与 XML Content-Type。
+
+`trailingSlash` 只在 dev 下为 `ignore`：Astro 的尾斜杠中间件会在任何插件之前直接 404，先放开再由插件统一发 308。构建产物仍是 `trailingSlash: 'never'` + `build.format: 'file'`。
+
+`npm run check:http` 在随机端口启动一次 dev 服务器、跑完检查后退出，可与已运行的预览并存（`--ignore-lock`，不写锁）。
+
+`astro preview` 只提供已裁剪的 `dist/`，不经过这段 dev 插件；`.html` 与尾斜杠行为以 Nginx 配置为准。
+
+## 验收 fixture
+
+`npm run check:acceptance` 不读写正式 `content/`：把 `tests/fixtures/acceptance/` 复制到临时目录，连同 `src`/`lib`/`styles`/构建配置一起真实构建，再按静态主机契约提供 HTTP。覆盖：
+
+- 7 篇 published（含同日两篇）、1 篇 draft、1 篇 archived、仅被私有文章使用的标签；归档 6+1、顺序、不重不漏、第二页 canonical 自指、越界页码 404、私有内容与独有图片不可达。
+- 0 篇 published：首页与归档 200 且显示“暂无文章”，空标签与第 2 页 404。
+- 缺 `title`、错误类型、非法 slug、非法日期各触发一次真实构建非零退出，日志含条目与字段。
+
 ## 验证
 
 ```sh
@@ -106,7 +132,8 @@ npm test
 
 ## 已知限制
 
-- 页面文件由 Dev2 提供。当前仓库没有 `src/pages` 时，`astro build` 成功但只产出内容资源；HTML 页面、canonical/OG 标签与 XML 端点的联合验证在页面接入后执行。
+- 页面文件由 Dev2 提供。本 revision 已包含页面，`npm test` 会联合检查 HTML、canonical/OG 与 XML 端点；单独合入本 PR 到不含页面的基线时，这些断言会自动跳过。
 - 构建按内容量全量执行，未做增量构建。
 - 内容图片尺寸在构建期按真实像素校验；修改图片需同步更新 frontmatter 的 width/height。
-- `public/content/` 中未被公开内容引用的文件会在构建结束时从 `dist/` 删除；开发服务器仍会提供它们。
+- `public/content/` 中未被公开内容引用的文件会在构建结束时从 `dist/` 删除；开发服务器由 `dev-public-contract` 插件按同一份清单拦截，不再直接提供。
+- `astro preview` 不执行 dev 契约（不处理 308/`.html`），生产行为以 Nginx 为准。
