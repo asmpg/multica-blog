@@ -26,11 +26,11 @@ node scripts/check-ui.mjs --origin http://localhost:41030   # 对运行中的预
 - 需要本机 Chrome/Chromium，可用 `CHROME_PATH` 指定；找不到会明确报错，不静默跳过。
 - 对 `astro dev` 复测时脚本会隐藏 `astro-dev-toolbar`（开发工具条，不属于站点产物，会浮在页脚上方遮住链接），并在输出里注明。要让预览也不显示它，需在根配置设 `devToolbar: { enabled: false }`（`astro.config.mjs` 属 Dev1 文件边界，本次未改）。
 
-## 断言覆盖（103 项 = 5 视口 × 5 页面 × 4 类 + 3 个状态机）
+## 断言覆盖（123 项 = 5 视口 × 6 页面 × 4 类 + 3 个状态机）
 
 | 类别 | 断言内容 |
 | --- | --- |
-| 布局不回退 | 容器 820/768/761/760/375 含 padding、内容宽 756/704/697/720/335、宽屏 2 列窄屏 1 列、gap 26px、卡片圆角 18px、基础字号 16px、正文 16/15px |
+| 布局不回退 | 6 页面 × 5 视口：容器 820/768/761/760/375 含 padding、内容宽 756/704/697/720/335、宽屏 2 列窄屏 1 列、gap 26px、卡片圆角 18px、基础字号 16px、正文 16/15px |
 | 无根横滚 | `documentElement.scrollWidth === clientWidth` |
 | 命中区 | 每个 `a[href]`/可聚焦控件：`elementFromPoint` 实测命中矩形 ≥ 44×44、中心可命中、命中区互不覆盖造成误路由；跳至正文聚焦后单独测 |
 | 焦点 | 逐次 Tab：2px solid `#1a1a1a` outline / offset 2px、不被 `overflow` 祖先裁切、Tab 顺序等于 DOM 顺序 |
@@ -40,7 +40,7 @@ node scripts/check-ui.mjs --origin http://localhost:41030   # 对运行中的预
 
 ## 本次结果（2026-11-14，Chrome 157，DPR 1，视口高 1000px）
 
-`103/103 项通过`，逐项见 `report.json`（产物）与 `report-preview-41030.json`（`astro dev` 预览环境 `http://localhost:41030` 的同一套断言）。
+`123/123 项通过`，逐项见 `report.json`（产物）与 `report-preview-41030.json`（`astro dev` 预览环境 `http://localhost:41030` 的同一套断言）。
 `report.json` 里每条 `hit-targets` 都带 `items` 逐个元素的实测命中矩形，复验时可直接对照，不必信汇总值。
 
 | 场景 | 修复前（METI-6 复现） | 修复后实测 |
@@ -57,10 +57,10 @@ node scripts/check-ui.mjs --origin http://localhost:41030   # 对运行中的预
 | 375px 页脚 RSS / 站点地图 | 26×17 / 63×17 | 44×44 / 50×44 |
 | 375px 卡片标题链接 | 196×33（短标题横向不足） | ≥ 196×44 |
 | 375px 标签 pill | 51×34（高度不足） | 51×44 |
-| 5 视口 × 5 页面最小命中区 | 34×39 | 44×44 |
+| 5 视口 × 6 页面最小命中区 | 34×39 | 44×44 |
 | fine pointer hover（不得回退） | -5px / 1.04 | -5px / 1.04 |
 
-截图：`<page>-<width>.png` 为 5 页面 × 5 视口整页；`state-reduced-motion-375.png`（reduce + hover）、
+截图：`<page>-<width>.png` 为 6 页面 × 5 视口整页；`state-reduced-motion-375.png`（reduce + hover）、
 `state-touch-tap-375.png`（触摸 tap 后）、`state-focus-375.png` / `state-focus-1440.png`（键盘焦点）为状态证据。
 
 ## 与规格的三点说明（需要 PM / 架构确认，已写进 issue）

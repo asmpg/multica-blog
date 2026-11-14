@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T07:34:19.148Z",
+  "generatedAt": "2026-11-14T07:42:35.592Z",
   "viewports": [
     375,
     760,
@@ -27,11 +27,15 @@
     {
       "name": "about",
       "path": "/about"
+    },
+    {
+      "name": "404",
+      "path": "/404"
     }
   ],
   "origin": "http://localhost:41030",
   "devToolbarHidden": true,
-  "total": 103,
+  "total": 123,
   "failed": 0,
   "results": [
     {
@@ -937,6 +941,144 @@
           "归档",
           "关于",
           "公开仓库",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll 404@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "404",
+        "metrics": {
+          "docScrollWidth": 375,
+          "docClientWidth": 375,
+          "bodyScrollWidth": 375,
+          "innerWidth": 375
+        }
+      }
+    },
+    {
+      "check": "layout 404@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "404",
+        "layout": {
+          "containerWidth": 375,
+          "containerPaddingLeft": "20px",
+          "containerPaddingRight": "20px",
+          "contentWidth": 335,
+          "cardColumns": 0,
+          "cardGap": null,
+          "cardRadius": null,
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": null
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets 404@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "404",
+        "count": 9,
+        "measured": 8,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "45.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "返回首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "63.0×44.0"
+          },
+          {
+            "text": "文章归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "63.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "50.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus 404@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "404",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "返回首页",
+          "文章归档",
           "RSS",
           "站点地图"
         ],
@@ -1863,6 +2005,144 @@
       }
     },
     {
+      "check": "no-root-hscroll 404@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "404",
+        "metrics": {
+          "docScrollWidth": 760,
+          "docClientWidth": 760,
+          "bodyScrollWidth": 760,
+          "innerWidth": 760
+        }
+      }
+    },
+    {
+      "check": "layout 404@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "404",
+        "layout": {
+          "containerWidth": 760,
+          "containerPaddingLeft": "20px",
+          "containerPaddingRight": "20px",
+          "contentWidth": 720,
+          "cardColumns": 0,
+          "cardGap": null,
+          "cardRadius": null,
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": null
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets 404@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "404",
+        "count": 9,
+        "measured": 8,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "45.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "返回首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "63.0×44.0"
+          },
+          {
+            "text": "文章归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "63.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "50.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus 404@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "404",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "返回首页",
+          "文章归档",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
       "check": "no-root-hscroll home@761",
       "ok": true,
       "detail": {
@@ -2765,6 +3045,144 @@
           "归档",
           "关于",
           "公开仓库",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll 404@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "404",
+        "metrics": {
+          "docScrollWidth": 761,
+          "docClientWidth": 761,
+          "bodyScrollWidth": 761,
+          "innerWidth": 761
+        }
+      }
+    },
+    {
+      "check": "layout 404@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "404",
+        "layout": {
+          "containerWidth": 761,
+          "containerPaddingLeft": "32px",
+          "containerPaddingRight": "32px",
+          "contentWidth": 697,
+          "cardColumns": 0,
+          "cardGap": null,
+          "cardRadius": null,
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": null
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets 404@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "404",
+        "count": 9,
+        "measured": 8,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "56.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "返回首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "63.0×44.0"
+          },
+          {
+            "text": "文章归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "63.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "68.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus 404@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "404",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "返回首页",
+          "文章归档",
           "RSS",
           "站点地图"
         ],
@@ -3691,6 +4109,144 @@
       }
     },
     {
+      "check": "no-root-hscroll 404@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "404",
+        "metrics": {
+          "docScrollWidth": 768,
+          "docClientWidth": 768,
+          "bodyScrollWidth": 768,
+          "innerWidth": 768
+        }
+      }
+    },
+    {
+      "check": "layout 404@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "404",
+        "layout": {
+          "containerWidth": 768,
+          "containerPaddingLeft": "32px",
+          "containerPaddingRight": "32px",
+          "contentWidth": 704,
+          "cardColumns": 0,
+          "cardGap": null,
+          "cardRadius": null,
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": null
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets 404@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "404",
+        "count": 9,
+        "measured": 8,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "56.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "返回首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "63.0×44.0"
+          },
+          {
+            "text": "文章归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "63.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "68.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus 404@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "404",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "返回首页",
+          "文章归档",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
       "check": "no-root-hscroll home@1440",
       "ok": true,
       "detail": {
@@ -4593,6 +5149,144 @@
           "归档",
           "关于",
           "公开仓库",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll 404@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "404",
+        "metrics": {
+          "docScrollWidth": 1440,
+          "docClientWidth": 1440,
+          "bodyScrollWidth": 1440,
+          "innerWidth": 1440
+        }
+      }
+    },
+    {
+      "check": "layout 404@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "404",
+        "layout": {
+          "containerWidth": 820,
+          "containerPaddingLeft": "32px",
+          "containerPaddingRight": "32px",
+          "contentWidth": 756,
+          "cardColumns": 0,
+          "cardGap": null,
+          "cardRadius": null,
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": null
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets 404@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "404",
+        "count": 9,
+        "measured": 8,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "56.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "返回首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "63.0×44.0"
+          },
+          {
+            "text": "文章归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "63.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "68.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus 404@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "404",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "返回首页",
+          "文章归档",
           "RSS",
           "站点地图"
         ],

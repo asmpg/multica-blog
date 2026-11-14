@@ -41,6 +41,7 @@ const PAGES = [
   { name: 'tag', path: '/tags/design' },
   { name: 'article', path: '/posts/blog-v1-design-contract' },
   { name: 'about', path: '/about' },
+  { name: '404', path: '/404' },
 ];
 const MIN_TARGET = 44;
 /** 规格 §6 的容器/栅格基准，修复不得顺手改动。 */
