@@ -584,6 +584,14 @@ async function checkHitTargets(page, pageName, width) {
     minHeight: Math.min(
       ...items.filter((item) => !item.inline && !item.offscreen).map((item) => item.hitHeight),
     ).toFixed(1),
+    // 逐个元素的实测命中区，便于复验时逐条核对（内联链接标记 inline 并以中心可命中为准）
+    items: items.map((item) => ({
+      text: item.text,
+      href: item.href,
+      inline: item.inline,
+      offscreen: item.offscreen,
+      hit: item.hitWidth && item.hitHeight ? `${item.hitWidth.toFixed(1)}×${item.hitHeight.toFixed(1)}` : null,
+    })),
     failures,
   });
   return items;

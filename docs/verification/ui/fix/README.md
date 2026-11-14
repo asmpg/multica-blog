@@ -41,6 +41,7 @@ node scripts/check-ui.mjs --origin http://localhost:41030   # 对运行中的预
 ## 本次结果（2026-11-14，Chrome 157，DPR 1，视口高 1000px）
 
 `103/103 项通过`，逐项见 `report.json`（产物）与 `report-preview-41030.json`（`astro dev` 预览环境 `http://localhost:41030` 的同一套断言）。
+`report.json` 里每条 `hit-targets` 都带 `items` 逐个元素的实测命中矩形，复验时可直接对照，不必信汇总值。
 
 | 场景 | 修复前（METI-6 复现） | 修复后实测 |
 | --- | --- | --- |
@@ -52,9 +53,10 @@ node scripts/check-ui.mjs --origin http://localhost:41030   # 对运行中的预
 | hover:none tap 后卡片 | 升起 -4.27px、hover 阴影、边框 `rgb(219,219,219)` | `matrix(1,0,0,1,0,0)`、`box-shadow: none`、`rgb(232,232,232)` |
 | hover:none tap 后封面 | `scale(1.0255)` | `matrix(1,0,0,1,0,0)` |
 | 375px 导航 首页/归档/关于 | 34×39 / 33.5×39 / 34×39 | 44×44 / 44×44 / 44×44 |
-| 375px 品牌 | 59×42（高度不足） | 44×44 |
-| 375px 页脚 RSS / 站点地图 | 26×17 / 63×17 | 44×44 / 63×44 |
-| 375px 卡片标题短标题 | 横向不足 44 | ≥ 44×44 |
+| 375px 品牌 | 59×42（高度不足） | 45×44 |
+| 375px 页脚 RSS / 站点地图 | 26×17 / 63×17 | 44×44 / 50×44 |
+| 375px 卡片标题链接 | 196×33（短标题横向不足） | ≥ 196×44 |
+| 375px 标签 pill | 51×34（高度不足） | 51×44 |
 | 5 视口 × 5 页面最小命中区 | 34×39 | 44×44 |
 | fine pointer hover（不得回退） | -5px / 1.04 | -5px / 1.04 |
 
@@ -74,3 +76,10 @@ node scripts/check-ui.mjs --origin http://localhost:41030   # 对运行中的预
 3. **命中区用居中伪元素按需扩展**（`.tap::after`：`min-width/min-height: 44px` + `translate(-50%,-50%)`），
    替代原来固定 `inset: -12px -7px`。盒本身已够 44 时不额外外扩，避免不必要的互相覆盖；
    伪元素属于链接自身，不产生第二个可聚焦节点，也不会造成错误路由。
+   卡片标题链接同时改为 `display: inline-block`（标题本身多行时整块算命中区），标题文字样式未变。
+
+## 未覆盖 / 需要根配置的事项
+
+- `astro dev` 会注入 `astro-dev-toolbar`（右下浮动开发工具条），它会盖住页脚链接。它是 dev 服务器的开发工具，
+  不属于站点产物（`dist/` 与 `npm run preview` 无此元素）；本次未改 `astro.config.mjs`（Dev1 文件边界），
+  复测脚本自动隐藏并在输出里注明。若希望预览也不显示，需在根配置加 `devToolbar: { enabled: false }`。
