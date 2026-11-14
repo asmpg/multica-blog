@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../../components/BaseLayout.astro';
+import PostList from '../../components/PostList.astro';
+import Pagination from '../../components/Pagination.astro';
+import { getArchivePages } from '../../data/contract';
+
+// 空集合仍有第一页（content-model §5），内容层保证 archivePages 至少含 page 1。
+const archive = getArchivePages()[0];
+
+if (!archive) {
+  throw new Error('内容层未提供归档第一页（content-model §5）。');
+}
+---
+
+<BaseLayout seo={archive.seo} current="archive">
+  <section class="section">
+    <h1 class="label">文章归档</h1>
+    {archive.posts.length > 0 ? <PostList posts={archive.posts} label="文章归档" /> : <p class="empty">暂无文章</p>}
+    <Pagination archive={archive} />
+  </section>
+</BaseLayout>

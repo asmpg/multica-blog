@@ -1,0 +1,19 @@
+---
+/**
+ * 正文渲染容器。
+ *
+ * 正文 HTML 由内容层（Dev1）提供并已做安全过滤与标题 id 注入（content-model §7）。
+ * 这里只补一个规格要求的可访问性细节：围栏代码块可键盘聚焦滚动，并有可访问名称。
+ */
+interface Props {
+  html: string;
+}
+
+const { html } = Astro.props;
+const body = html.replaceAll(
+  '<pre>',
+  '<pre tabindex="0" role="group" aria-label="代码示例">',
+);
+---
+
+<div class="article-body" set:html={body} />

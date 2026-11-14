@@ -1,0 +1,22 @@
+---
+import type { TagRef } from '../data/contract';
+
+interface Props {
+  tags: TagRef[];
+  label: string;
+}
+
+const { tags, label } = Astro.props;
+---
+
+<ul class="article-tags" aria-label={label}>
+  {
+    tags.map((tag) => (
+      <li>
+        <a class="chip" href={tag.path}>
+          {tag.name}
+        </a>
+      </li>
+    ))
+  }
+</ul>

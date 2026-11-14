@@ -1,0 +1,277 @@
+/*
+ * 文章页 / 关于页 / 404 骨架与正文排版。
+ * 依据 docs/design-spec.md §3、§5、§7、§8。
+ */
+
+.article {
+  padding-top: var(--space-article-top);
+  padding-bottom: var(--space-content-bottom);
+}
+
+.article-back {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: var(--space-back-bottom);
+  font-size: var(--fs-back);
+  font-weight: 400;
+  line-height: var(--lh-back);
+  letter-spacing: var(--ls-back);
+  color: var(--color-muted);
+  transition: var(--motion-nav);
+}
+
+.article-back:hover,
+.article-back:focus-visible {
+  color: var(--color-ink);
+}
+
+/* 元信息：日期 / 作者，gap 16px 可换行 */
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-meta);
+  margin-bottom: var(--space-meta);
+  font-family: var(--font-mono);
+  font-size: var(--fs-post-meta);
+  font-weight: 400;
+  line-height: var(--lh-post-meta);
+  letter-spacing: var(--ls-post-meta);
+  color: var(--color-muted);
+}
+
+.article-title {
+  margin-bottom: var(--space-title);
+  font-size: var(--fs-post-title);
+  font-weight: var(--fw-post-title);
+  line-height: var(--lh-post-title);
+  letter-spacing: var(--ls-post-title);
+  color: var(--color-ink);
+  overflow-wrap: anywhere;
+}
+
+.article-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-tags-gap);
+  margin-bottom: var(--space-article-tags-bottom);
+}
+
+.article-cover {
+  width: 100%;
+  height: auto;
+  margin-bottom: var(--space-cover-bottom);
+  border: var(--border-decorative);
+  border-radius: var(--radius-cover);
+}
+
+/* ---- 正文 ---- */
+.article-body {
+  font-size: var(--fs-body);
+  font-weight: 400;
+  line-height: var(--lh-body);
+  letter-spacing: var(--ls-body);
+  color: var(--color-body);
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+
+.article-body > * {
+  max-width: 100%;
+}
+
+.article-body > :first-child {
+  margin-top: 0;
+}
+
+.article-body p {
+  margin-bottom: var(--space-p-end);
+}
+
+.article-body ul,
+.article-body ol {
+  margin-bottom: var(--space-p-end);
+  padding-left: var(--space-p-end);
+}
+
+/* N：补齐 reset 移除的语义 marker，左缩进 1.4em */
+.article-body ul {
+  list-style: disc;
+}
+
+.article-body ol {
+  list-style: decimal;
+}
+
+.article-body li {
+  margin: var(--space-li) 0;
+}
+
+.article-body h2,
+.article-body h3,
+.article-body h4,
+.article-body h5,
+.article-body h6 {
+  margin: var(--space-h2-top) 0 var(--space-h2-bottom);
+  color: var(--color-ink);
+  scroll-margin-top: 34px; /* N */
+}
+
+.article-body h2 {
+  font-size: var(--fs-h2);
+  font-weight: 800;
+  line-height: var(--lh-h2);
+  letter-spacing: var(--ls-h2);
+}
+
+/* H2 前的 22×3px 黄色短横，与文字 gap 14px；H3–H6 不加。
+   用 flex + gap 表达，与参考声明一致（.article-body h2 为 flex）。 */
+.article-body h2 {
+  display: flex;
+  align-items: center;
+  gap: var(--size-mark-gap);
+}
+
+.article-body h2::before {
+  content: "";
+  flex: 0 0 auto;
+  width: var(--size-mark-w);
+  height: var(--size-mark-h);
+  border-radius: var(--radius-mark);
+  background: var(--color-highlight);
+}
+
+.article-body h3 {
+  font-size: var(--fs-h3);
+  font-weight: 800;
+  line-height: var(--lh-h3);
+  letter-spacing: var(--ls-h3);
+}
+
+.article-body h4 {
+  font-size: var(--fs-h4);
+  font-weight: 800;
+  line-height: var(--lh-h4);
+  letter-spacing: var(--ls-h4);
+}
+
+.article-body h5 {
+  font-size: var(--fs-h5);
+  font-weight: var(--fw-h5);
+  line-height: var(--lh-h5);
+  letter-spacing: normal;
+}
+
+.article-body h6 {
+  font-size: var(--fs-h6);
+  font-weight: var(--fw-h6);
+  line-height: var(--lh-h6);
+  letter-spacing: normal;
+}
+
+/* 正文链接：ink 字 + highlight 2px 下划线，hover 划亮背景 */
+.article-body a {
+  color: var(--color-ink);
+  text-decoration: underline;
+  text-decoration-color: var(--color-highlight);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  transition: var(--motion-link);
+}
+
+.article-body a:hover,
+.article-body a:focus-visible {
+  background: var(--color-highlight);
+}
+
+.article-body img {
+  width: 100%;
+  height: auto;
+  margin: var(--space-image-top) auto var(--space-image-bottom);
+  border: var(--border-decorative);
+  border-radius: var(--radius-body-media);
+}
+
+.article-body blockquote {
+  margin: var(--space-block) 0;
+  padding: var(--space-mobile-nav) var(--space-card-top);
+  border-left: var(--border-quote);
+  border-radius: var(--radius-quote);
+  background: var(--color-surface);
+}
+
+.article-body blockquote p {
+  margin-bottom: 0;
+}
+
+/* 围栏代码：容器 14px/1.7，内部 code 保留 .88em；可聚焦滚动 */
+.article-body pre {
+  margin: var(--space-block) 0;
+  padding: var(--space-card-top) var(--space-mobile-gutter);
+  overflow-x: auto;
+  border-radius: var(--radius-body-media);
+  background: var(--color-code-bg);
+  color: var(--color-code-fg);
+  font-family: var(--font-mono);
+  font-size: var(--fs-pre);
+  line-height: var(--lh-pre);
+}
+
+.article-body pre:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 2px;
+}
+
+.article-body pre code {
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  color: inherit;
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+  line-height: inherit;
+  overflow-wrap: normal;
+  word-break: normal;
+  white-space: pre;
+}
+
+.article-body code {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+  line-height: inherit;
+  letter-spacing: inherit;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.article-body :not(pre) > code {
+  padding: var(--space-inline-code-y) var(--space-inline-code-x);
+  border-radius: var(--radius-inline-code);
+  background: var(--color-surface);
+  color: var(--color-body);
+}
+
+/* 文章末返回区 */
+.article-end {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-meta);
+  margin-top: var(--space-end-top);
+  padding-top: var(--space-title);
+  border-top: var(--border-decorative);
+}
+
+/* 404 链接组 */
+.notfound-body {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  letter-spacing: var(--ls-body);
+  color: var(--color-body);
+}
+
+.notfound-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-meta);
+  margin-top: var(--space-meta);
+}

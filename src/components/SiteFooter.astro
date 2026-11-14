@@ -1,0 +1,15 @@
+---
+import type { Site } from '../data/contract';
+
+interface Props {
+  site: Site;
+}
+
+const { site } = Astro.props;
+---
+
+<footer class="site-footer">
+  <span>{site.name}</span>
+  <a href="/rss.xml">RSS</a>
+  <a href="/sitemap.xml">站点地图</a>
+</footer>

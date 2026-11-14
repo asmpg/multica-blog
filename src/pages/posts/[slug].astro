@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../../components/BaseLayout.astro';
+import ArticleBody from '../../components/ArticleBody.astro';
+import TagChips from '../../components/TagChips.astro';
+import { formatDisplayDate } from '../../data/contract';
+import { posts } from '../../server/content';
+
+export function getStaticPaths() {
+  // 只有 published 有页面（content-model §5）；内容层只暴露公开集合。
+  return posts.map((post) => ({ params: { slug: post.slug }, props: { post } }));
+}
+
+const { post } = Astro.props;
+---
+
+<BaseLayout seo={post.seo}>
+  <article class="article">
+    <a class="article-back tap" href="/archive">← 全部文章</a>
+    <div class="article-meta">
+      <time datetime={post.publishedAt}>{formatDisplayDate(post.publishedAt)}</time>
+      <span>{post.author.name}</span>
+    </div>
+    <h1 class="article-title">{post.title}</h1>
+    {post.tags.length > 0 && <TagChips tags={post.tags} label="文章标签" />}
+    {
+      post.cover && (
+        <img
+          class="article-cover"
+          src={post.cover.src}
+          alt={post.cover.alt}
+          width={post.cover.width}
+          height={post.cover.height}
+        />
+      )
+    }
+    <ArticleBody html={post.body} />
+    <div class="article-end">
+      <a class="more tap" href="/archive">← 全部文章</a>
+    </div>
+  </article>
+</BaseLayout>

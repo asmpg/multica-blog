@@ -1,0 +1,47 @@
+---
+import type { PublicPostSummary } from '../data/contract';
+import { formatDisplayDate } from '../data/contract';
+
+interface Props {
+  post: PublicPostSummary;
+}
+
+const { post } = Astro.props;
+---
+
+<li class="acard">
+  {
+    post.cover ? (
+      <div class="acard-cover">
+        <img
+          src={post.cover.src}
+          alt={post.cover.alt}
+          width={post.cover.width}
+          height={post.cover.height}
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+    ) : (
+      <div class="acard-cover" aria-hidden="true"></div>
+    )
+  }
+  <div class="acard-info">
+    <time class="acard-date" datetime={post.publishedAt}>{formatDisplayDate(post.publishedAt)}</time>
+    <h2 class="acard-title"><a class="tap" href={post.path}>{post.title}</a></h2>
+    <p class="acard-excerpt">{post.excerpt}</p>
+    {
+      post.tags.length > 0 && (
+        <ul class="acard-tags">
+          {post.tags.map((tag) => (
+            <li>
+              <a class="chip" href={tag.path}>
+                {tag.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+  </div>
+</li>

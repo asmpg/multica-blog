@@ -1,0 +1,223 @@
+/*
+ * 组件：文章卡片、标签/分页 pill、更多链接。
+ * 依据 docs/design-spec.md §5、§6、§8。
+ */
+
+/* ---- 卡片栅格：宽屏两列、窄屏一列，gap 恒为 26px ---- */
+.alist {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-grid);
+}
+
+/* ---- 卡片 ---- */
+.acard {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background: var(--color-bg);
+  border: var(--border-decorative);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-rest);
+  transform: translateY(0);
+  transition: var(--motion-card);
+}
+
+.acard:hover,
+.acard:focus-within {
+  border-color: var(--color-line-hover);
+  box-shadow: var(--shadow-card-active);
+  transform: translateY(-5px);
+}
+
+/* 封面 16/9；卡片本身不 clip，避免裁掉内层焦点轮廓 */
+.acard-cover {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: var(--radius-card) var(--radius-card) 0 0;
+  border-bottom: var(--border-decorative);
+  background: var(--color-surface);
+}
+
+.acard-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: var(--motion-cover);
+}
+
+.acard:hover .acard-cover img,
+.acard:focus-within .acard-cover img {
+  transform: scale(1.04);
+}
+
+.acard-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-card-flow);
+  padding: var(--space-card-top) var(--space-card-x-bottom) var(--space-card-x-bottom);
+}
+
+.acard-date {
+  font-family: var(--font-mono);
+  font-size: var(--fs-card-date);
+  font-weight: 400;
+  line-height: var(--lh-card-date);
+  letter-spacing: var(--ls-card-date);
+  color: var(--color-muted);
+}
+
+.acard-title {
+  width: max-content;
+  max-width: 100%;
+  font-size: var(--fs-card-title);
+  font-weight: 800;
+  line-height: var(--lh-card-title);
+  letter-spacing: var(--ls-card-title);
+  color: var(--color-ink);
+  overflow-wrap: anywhere;
+  /* 标题划亮：0×42% → 100×42%，位置 0 68%；作用在标题盒上（同参考声明） */
+  background-image: linear-gradient(var(--color-highlight), var(--color-highlight));
+  background-repeat: no-repeat;
+  background-size: 0% 42%;
+  background-position: 0 68%;
+  transition: var(--motion-title);
+}
+
+.acard-title a {
+  color: inherit;
+}
+
+.acard:hover .acard-title,
+.acard:focus-within .acard-title,
+.acard-title:focus-within {
+  background-size: 100% 42%;
+}
+
+/* 摘要：宽屏 2 行、窄屏 3 行截断；完整文本仍在 DOM 中可被读屏获取 */
+.acard-excerpt {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+  font-size: var(--fs-excerpt);
+  font-weight: 400;
+  line-height: var(--lh-excerpt);
+  letter-spacing: normal;
+  color: var(--color-secondary);
+}
+
+.acard-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-tags-gap);
+}
+
+/* ---- 标签 / 分页 pill（N） ---- */
+.chip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: var(--fs-chip);
+  font-weight: var(--fw-chip);
+  line-height: var(--lh-chip);
+  letter-spacing: var(--ls-chip);
+  color: var(--color-muted);
+  background: var(--color-bg);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-pill);
+  padding: var(--space-chip-y) var(--space-chip-x);
+  transition: var(--motion-chip);
+  overflow-wrap: anywhere;
+}
+
+/* 命中区补足 44×44，不放大文字 */
+.chip::after {
+  content: "";
+  position: absolute;
+  inset: -6px -2px;
+}
+
+a.chip:hover,
+a.chip:focus-visible {
+  color: var(--color-ink);
+  background: var(--color-highlight);
+  border-color: var(--color-highlight);
+}
+
+.chip[aria-current="page"] {
+  color: var(--color-ink);
+  background: var(--color-highlight);
+  border-color: var(--color-ink);
+}
+
+/* 禁用分页：可读文字，不用 opacity 淡化，不可点击 */
+.chip--disabled {
+  color: var(--color-muted);
+  background: var(--color-bg);
+  border-color: var(--color-line);
+  opacity: 1;
+}
+
+/* ---- 分页 ---- */
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-pagination-gap);
+  margin-top: var(--space-pagination-top);
+}
+
+/* ---- 更多 / 文章末链接 ---- */
+.more {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-more-gap);
+  font-size: var(--fs-more);
+  font-weight: var(--fw-more);
+  line-height: var(--lh-more);
+  letter-spacing: var(--ls-more);
+  color: var(--color-ink);
+}
+
+.more-arrow {
+  display: inline-block;
+  transition: var(--motion-more);
+}
+
+.more:hover .more-arrow,
+.more:focus-visible .more-arrow {
+  transform: translateX(6px);
+}
+
+.more-block {
+  margin-top: var(--space-title);
+}
+
+/* 文章末链接：hover 划亮 */
+.article-end .more {
+  padding: 0;
+  transition: var(--motion-link);
+}
+
+.article-end .more:hover,
+.article-end .more:focus-visible {
+  background: var(--color-highlight);
+}
+
+@media (max-width: 760px) {
+  .alist {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .acard-excerpt {
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+  }
+}

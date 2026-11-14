@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../components/BaseLayout.astro';
+import { getNotFoundSeo, getSite } from '../data/contract';
+
+const site = getSite();
+const notFound = getNotFoundSeo();
+
+// 404 不输出 canonical、不进入成功页面 title 唯一集合（content-model §6）。
+const seo = {
+  title: notFound.title,
+  description: notFound.description,
+  canonical: '',
+  ogTitle: notFound.title,
+  ogDescription: notFound.description,
+  ogImage: site.defaultOgImage.src,
+  ogImageAlt: site.defaultOgImage.alt,
+  ogImageWidth: site.defaultOgImage.width,
+  ogImageHeight: site.defaultOgImage.height,
+  ogType: 'website' as const,
+  language: 'zh-CN' as const,
+  noindex: true,
+};
+---
+
+<BaseLayout seo={seo}>
+  <article class="article">
+    <h1 class="article-title">页面不存在</h1>
+    <p class="notfound-body">请求的页面不存在。</p>
+    <div class="notfound-links">
+      <a class="more tap" href="/">返回首页</a>
+      <a class="more tap" href="/archive">文章归档</a>
+    </div>
+  </article>
+</BaseLayout>
