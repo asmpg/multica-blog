@@ -12,6 +12,8 @@
     "dev": "astro dev --host 127.0.0.1 --port 4321",
     "build": "astro sync && astro check && astro build",
     "test": "npm run build && vitest run && node scripts/check-reproducible.mjs",
+    "check:http": "node scripts/check-http.mjs",
+    "check:acceptance": "node scripts/verify-acceptance.mjs",
     "preview": "astro preview --host 127.0.0.1 --port 4321"
   },
   "dependencies": {
