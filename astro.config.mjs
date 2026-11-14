@@ -115,6 +115,8 @@ export default defineConfig({
   site: normalizeSiteUrl(process.env.SITE_URL),
   output: 'static',
   trailingSlash: isDev ? 'ignore' : 'never',
+  // 开发工具条浮在内容之上，会盖住页脚链接；用户只看本地预览。
+  devToolbar: { enabled: false },
   build: { format: 'file' },
   integrations: [pruneContentAssets()],
   vite: { plugins: [devPublicContract(process.cwd())] },
