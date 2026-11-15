@@ -86,7 +86,11 @@
   transition: var(--motion-title);
 }
 
+/* 标题链接：inline-block 让 .tap 的命中区按标题盒尺寸（含换行后整块）计算 */
 .acard-title a {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
   color: inherit;
 }
 
@@ -136,12 +140,7 @@
   overflow-wrap: anywhere;
 }
 
-/* 命中区补足 44×44，不放大文字 */
-.chip::after {
-  content: "";
-  position: absolute;
-  inset: -6px -2px;
-}
+/* 命中区补足 44×44 由 .tap 提供（见 global.css），不放大 pill 本身 */
 
 a.chip:hover,
 a.chip:focus-visible {
@@ -219,5 +218,45 @@ a.chip:focus-visible {
   .acard-excerpt {
     -webkit-line-clamp: 3;
     line-clamp: 3;
+  }
+}
+
+/*
+ * 运动降级（§8）：必须在本文件所有 hover/focus 规则之后。
+ * 这些选择器与上面的组件规则同级，靠源序覆盖；放到 global.css 会被这里的规则盖掉
+ * （METI-6 实测 reduce / hover:none 仍保留位移与缩放）。
+ */
+
+/* reduce：卡片不位移、封面不放大、箭头不移动（颜色/边框/下划线反馈保留） */
+@media (prefers-reduced-motion: reduce) {
+  .acard:hover,
+  .acard:focus-within {
+    transform: none;
+  }
+
+  .acard:hover .acard-cover img,
+  .acard:focus-within .acard-cover img {
+    transform: none;
+  }
+
+  .more:hover .more-arrow,
+  .more:focus-visible .more-arrow {
+    transform: none;
+  }
+}
+
+/*
+ * 触摸设备（hover:none）：只去掉仅由 hover 造成的升起/阴影/封面放大；
+ * :focus-within 与 focus-visible 轮廓保留，键盘用户仍能看到焦点。
+ */
+@media (hover: none) {
+  .acard:hover {
+    transform: none;
+    box-shadow: var(--shadow-rest);
+    border-color: var(--color-line);
+  }
+
+  .acard:hover .acard-cover img {
+    transform: none;
   }
 }

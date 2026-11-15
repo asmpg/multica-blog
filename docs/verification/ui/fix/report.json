@@ -1,0 +1,5481 @@
+{
+  "generatedAt": "2026-11-14T07:41:31.930Z",
+  "viewports": [
+    375,
+    760,
+    761,
+    768,
+    1440
+  ],
+  "pages": [
+    {
+      "name": "home",
+      "path": "/"
+    },
+    {
+      "name": "archive",
+      "path": "/archive"
+    },
+    {
+      "name": "tag",
+      "path": "/tags/design"
+    },
+    {
+      "name": "article",
+      "path": "/posts/blog-v1-design-contract"
+    },
+    {
+      "name": "about",
+      "path": "/about"
+    },
+    {
+      "name": "404",
+      "path": "/404"
+    }
+  ],
+  "origin": "http://127.0.0.1:57552",
+  "devToolbarHidden": false,
+  "total": 123,
+  "failed": 0,
+  "results": [
+    {
+      "check": "no-root-hscroll home@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "home",
+        "metrics": {
+          "docScrollWidth": 375,
+          "docClientWidth": 375,
+          "bodyScrollWidth": 375,
+          "innerWidth": 375
+        }
+      }
+    },
+    {
+      "check": "layout home@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "home",
+        "layout": {
+          "containerWidth": 375,
+          "containerPaddingLeft": "20px",
+          "containerPaddingRight": "20px",
+          "contentWidth": 335,
+          "cardColumns": 1,
+          "cardGap": "26px",
+          "cardRadius": "18px",
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": null
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets home@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "home",
+        "count": 19,
+        "measured": 18,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "45.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "博客 v1 的内容与视觉契约",
+            "href": "/posts/blog-v1-design-contract",
+            "inline": false,
+            "offscreen": false,
+            "hit": "196.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "一条命令产出整站",
+            "href": "/posts/static-site-build-pipeline",
+            "inline": false,
+            "offscreen": false,
+            "hit": "135.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+            "href": "/posts/markdown-safety-and-links",
+            "inline": false,
+            "offscreen": false,
+            "hit": "289.0×72.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "不读时钟的可复现构建",
+            "href": "/posts/reproducible-builds-without-clock",
+            "inline": false,
+            "offscreen": false,
+            "hit": "169.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "全部文章→",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "89.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "50.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus home@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "home",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "博客 v1 的内容与视觉契约",
+          "架构",
+          "设计",
+          "一条命令产出整站",
+          "架构",
+          "构建",
+          "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+          "设计",
+          "构建",
+          "不读时钟的可复现构建",
+          "构建",
+          "全部文章→",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll archive@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "archive",
+        "metrics": {
+          "docScrollWidth": 375,
+          "docClientWidth": 375,
+          "bodyScrollWidth": 375,
+          "innerWidth": 375
+        }
+      }
+    },
+    {
+      "check": "layout archive@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "archive",
+        "layout": {
+          "containerWidth": 375,
+          "containerPaddingLeft": "20px",
+          "containerPaddingRight": "20px",
+          "contentWidth": 335,
+          "cardColumns": 1,
+          "cardGap": "26px",
+          "cardRadius": "18px",
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": null
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets archive@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "archive",
+        "count": 18,
+        "measured": 17,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "45.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "博客 v1 的内容与视觉契约",
+            "href": "/posts/blog-v1-design-contract",
+            "inline": false,
+            "offscreen": false,
+            "hit": "196.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "一条命令产出整站",
+            "href": "/posts/static-site-build-pipeline",
+            "inline": false,
+            "offscreen": false,
+            "hit": "135.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+            "href": "/posts/markdown-safety-and-links",
+            "inline": false,
+            "offscreen": false,
+            "hit": "289.0×72.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "不读时钟的可复现构建",
+            "href": "/posts/reproducible-builds-without-clock",
+            "inline": false,
+            "offscreen": false,
+            "hit": "169.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "50.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus archive@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "archive",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "博客 v1 的内容与视觉契约",
+          "架构",
+          "设计",
+          "一条命令产出整站",
+          "架构",
+          "构建",
+          "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+          "设计",
+          "构建",
+          "不读时钟的可复现构建",
+          "构建",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll tag@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "tag",
+        "metrics": {
+          "docScrollWidth": 375,
+          "docClientWidth": 375,
+          "bodyScrollWidth": 375,
+          "innerWidth": 375
+        }
+      }
+    },
+    {
+      "check": "layout tag@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "tag",
+        "layout": {
+          "containerWidth": 375,
+          "containerPaddingLeft": "20px",
+          "containerPaddingRight": "20px",
+          "contentWidth": 335,
+          "cardColumns": 1,
+          "cardGap": "26px",
+          "cardRadius": "18px",
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": null
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets tag@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "tag",
+        "count": 13,
+        "measured": 12,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "45.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "博客 v1 的内容与视觉契约",
+            "href": "/posts/blog-v1-design-contract",
+            "inline": false,
+            "offscreen": false,
+            "hit": "196.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+            "href": "/posts/markdown-safety-and-links",
+            "inline": false,
+            "offscreen": false,
+            "hit": "289.0×72.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "50.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus tag@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "tag",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "博客 v1 的内容与视觉契约",
+          "架构",
+          "设计",
+          "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+          "设计",
+          "构建",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll article@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "article",
+        "metrics": {
+          "docScrollWidth": 375,
+          "docClientWidth": 375,
+          "bodyScrollWidth": 375,
+          "innerWidth": 375
+        }
+      }
+    },
+    {
+      "check": "layout article@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "article",
+        "layout": {
+          "containerWidth": 375,
+          "containerPaddingLeft": "20px",
+          "containerPaddingRight": "20px",
+          "contentWidth": 335,
+          "cardColumns": 0,
+          "cardGap": null,
+          "cardRadius": null,
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": "15px"
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets article@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "article",
+        "count": 15,
+        "measured": 11,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "45.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "← 全部文章",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "79.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "外部链接",
+            "href": "https://docs.astro.build/en/guides/content-collections/",
+            "inline": true,
+            "offscreen": false,
+            "hit": "60.5×17.5"
+          },
+          {
+            "text": "npm ci npm run build",
+            "href": "",
+            "inline": false,
+            "offscreen": false,
+            "hit": "335.0×84.0"
+          },
+          {
+            "text": "关于页",
+            "href": "/about",
+            "inline": true,
+            "offscreen": false,
+            "hit": "45.5×17.5"
+          },
+          {
+            "text": "构建管线",
+            "href": "/posts/static-site-build-pipeline",
+            "inline": true,
+            "offscreen": false,
+            "hit": "31.0×17.5"
+          },
+          {
+            "text": "← 全部文章",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "83.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "50.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus article@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "article",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "← 全部文章",
+          "架构",
+          "设计",
+          "外部链接",
+          "npm ci npm run build",
+          "关于页",
+          "构建管线",
+          "← 全部文章",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll about@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "about",
+        "metrics": {
+          "docScrollWidth": 375,
+          "docClientWidth": 375,
+          "bodyScrollWidth": 375,
+          "innerWidth": 375
+        }
+      }
+    },
+    {
+      "check": "layout about@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "about",
+        "layout": {
+          "containerWidth": 375,
+          "containerPaddingLeft": "20px",
+          "containerPaddingRight": "20px",
+          "contentWidth": 335,
+          "cardColumns": 0,
+          "cardGap": null,
+          "cardRadius": null,
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": "15px"
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets about@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "about",
+        "count": 8,
+        "measured": 6,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "45.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "公开仓库",
+            "href": "https://github.com/asmpg/multica-blog",
+            "inline": true,
+            "offscreen": false,
+            "hit": "60.5×17.5"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "50.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus about@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "about",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "公开仓库",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll 404@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "404",
+        "metrics": {
+          "docScrollWidth": 375,
+          "docClientWidth": 375,
+          "bodyScrollWidth": 375,
+          "innerWidth": 375
+        }
+      }
+    },
+    {
+      "check": "layout 404@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "404",
+        "layout": {
+          "containerWidth": 375,
+          "containerPaddingLeft": "20px",
+          "containerPaddingRight": "20px",
+          "contentWidth": 335,
+          "cardColumns": 0,
+          "cardGap": null,
+          "cardRadius": null,
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": null
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets 404@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "404",
+        "count": 9,
+        "measured": 8,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "45.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "返回首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "63.0×44.0"
+          },
+          {
+            "text": "文章归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "63.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "50.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus 404@375",
+      "ok": true,
+      "detail": {
+        "viewport": 375,
+        "page": "404",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "返回首页",
+          "文章归档",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll home@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "home",
+        "metrics": {
+          "docScrollWidth": 760,
+          "docClientWidth": 760,
+          "bodyScrollWidth": 760,
+          "innerWidth": 760
+        }
+      }
+    },
+    {
+      "check": "layout home@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "home",
+        "layout": {
+          "containerWidth": 760,
+          "containerPaddingLeft": "20px",
+          "containerPaddingRight": "20px",
+          "contentWidth": 720,
+          "cardColumns": 1,
+          "cardGap": "26px",
+          "cardRadius": "18px",
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": null
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets home@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "home",
+        "count": 19,
+        "measured": 18,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "45.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "博客 v1 的内容与视觉契约",
+            "href": "/posts/blog-v1-design-contract",
+            "inline": false,
+            "offscreen": false,
+            "hit": "196.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "一条命令产出整站",
+            "href": "/posts/static-site-build-pipeline",
+            "inline": false,
+            "offscreen": false,
+            "hit": "135.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+            "href": "/posts/markdown-safety-and-links",
+            "inline": false,
+            "offscreen": false,
+            "hit": "400.0×44.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "不读时钟的可复现构建",
+            "href": "/posts/reproducible-builds-without-clock",
+            "inline": false,
+            "offscreen": false,
+            "hit": "169.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "全部文章→",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "89.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "50.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus home@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "home",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "博客 v1 的内容与视觉契约",
+          "架构",
+          "设计",
+          "一条命令产出整站",
+          "架构",
+          "构建",
+          "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+          "设计",
+          "构建",
+          "不读时钟的可复现构建",
+          "构建",
+          "全部文章→",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll archive@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "archive",
+        "metrics": {
+          "docScrollWidth": 760,
+          "docClientWidth": 760,
+          "bodyScrollWidth": 760,
+          "innerWidth": 760
+        }
+      }
+    },
+    {
+      "check": "layout archive@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "archive",
+        "layout": {
+          "containerWidth": 760,
+          "containerPaddingLeft": "20px",
+          "containerPaddingRight": "20px",
+          "contentWidth": 720,
+          "cardColumns": 1,
+          "cardGap": "26px",
+          "cardRadius": "18px",
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": null
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets archive@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "archive",
+        "count": 18,
+        "measured": 17,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "45.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "博客 v1 的内容与视觉契约",
+            "href": "/posts/blog-v1-design-contract",
+            "inline": false,
+            "offscreen": false,
+            "hit": "196.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "一条命令产出整站",
+            "href": "/posts/static-site-build-pipeline",
+            "inline": false,
+            "offscreen": false,
+            "hit": "135.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+            "href": "/posts/markdown-safety-and-links",
+            "inline": false,
+            "offscreen": false,
+            "hit": "400.0×44.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "不读时钟的可复现构建",
+            "href": "/posts/reproducible-builds-without-clock",
+            "inline": false,
+            "offscreen": false,
+            "hit": "169.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "50.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus archive@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "archive",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "博客 v1 的内容与视觉契约",
+          "架构",
+          "设计",
+          "一条命令产出整站",
+          "架构",
+          "构建",
+          "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+          "设计",
+          "构建",
+          "不读时钟的可复现构建",
+          "构建",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll tag@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "tag",
+        "metrics": {
+          "docScrollWidth": 760,
+          "docClientWidth": 760,
+          "bodyScrollWidth": 760,
+          "innerWidth": 760
+        }
+      }
+    },
+    {
+      "check": "layout tag@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "tag",
+        "layout": {
+          "containerWidth": 760,
+          "containerPaddingLeft": "20px",
+          "containerPaddingRight": "20px",
+          "contentWidth": 720,
+          "cardColumns": 1,
+          "cardGap": "26px",
+          "cardRadius": "18px",
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": null
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets tag@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "tag",
+        "count": 13,
+        "measured": 12,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "45.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "博客 v1 的内容与视觉契约",
+            "href": "/posts/blog-v1-design-contract",
+            "inline": false,
+            "offscreen": false,
+            "hit": "196.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+            "href": "/posts/markdown-safety-and-links",
+            "inline": false,
+            "offscreen": false,
+            "hit": "400.0×44.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "50.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus tag@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "tag",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "博客 v1 的内容与视觉契约",
+          "架构",
+          "设计",
+          "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+          "设计",
+          "构建",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll article@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "article",
+        "metrics": {
+          "docScrollWidth": 760,
+          "docClientWidth": 760,
+          "bodyScrollWidth": 760,
+          "innerWidth": 760
+        }
+      }
+    },
+    {
+      "check": "layout article@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "article",
+        "layout": {
+          "containerWidth": 760,
+          "containerPaddingLeft": "20px",
+          "containerPaddingRight": "20px",
+          "contentWidth": 720,
+          "cardColumns": 0,
+          "cardGap": null,
+          "cardRadius": null,
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": "15px"
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets article@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "article",
+        "count": 15,
+        "measured": 11,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "45.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "← 全部文章",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "79.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "外部链接",
+            "href": "https://docs.astro.build/en/guides/content-collections/",
+            "inline": true,
+            "offscreen": false,
+            "hit": "60.5×17.5"
+          },
+          {
+            "text": "npm ci npm run build",
+            "href": "",
+            "inline": false,
+            "offscreen": false,
+            "hit": "400.0×83.5"
+          },
+          {
+            "text": "关于页",
+            "href": "/about",
+            "inline": true,
+            "offscreen": false,
+            "hit": "45.5×17.5"
+          },
+          {
+            "text": "构建管线",
+            "href": "/posts/static-site-build-pipeline",
+            "inline": true,
+            "offscreen": false,
+            "hit": "60.5×17.5"
+          },
+          {
+            "text": "← 全部文章",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "83.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "50.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus article@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "article",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "← 全部文章",
+          "架构",
+          "设计",
+          "外部链接",
+          "npm ci npm run build",
+          "关于页",
+          "构建管线",
+          "← 全部文章",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll about@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "about",
+        "metrics": {
+          "docScrollWidth": 760,
+          "docClientWidth": 760,
+          "bodyScrollWidth": 760,
+          "innerWidth": 760
+        }
+      }
+    },
+    {
+      "check": "layout about@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "about",
+        "layout": {
+          "containerWidth": 760,
+          "containerPaddingLeft": "20px",
+          "containerPaddingRight": "20px",
+          "contentWidth": 720,
+          "cardColumns": 0,
+          "cardGap": null,
+          "cardRadius": null,
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": "15px"
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets about@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "about",
+        "count": 8,
+        "measured": 6,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "45.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "公开仓库",
+            "href": "https://github.com/asmpg/multica-blog",
+            "inline": true,
+            "offscreen": false,
+            "hit": "60.5×17.5"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "50.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus about@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "about",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "公开仓库",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll 404@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "404",
+        "metrics": {
+          "docScrollWidth": 760,
+          "docClientWidth": 760,
+          "bodyScrollWidth": 760,
+          "innerWidth": 760
+        }
+      }
+    },
+    {
+      "check": "layout 404@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "404",
+        "layout": {
+          "containerWidth": 760,
+          "containerPaddingLeft": "20px",
+          "containerPaddingRight": "20px",
+          "contentWidth": 720,
+          "cardColumns": 0,
+          "cardGap": null,
+          "cardRadius": null,
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": null
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets 404@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "404",
+        "count": 9,
+        "measured": 8,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "45.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "返回首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "63.0×44.0"
+          },
+          {
+            "text": "文章归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "63.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "50.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus 404@760",
+      "ok": true,
+      "detail": {
+        "viewport": 760,
+        "page": "404",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "返回首页",
+          "文章归档",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll home@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "home",
+        "metrics": {
+          "docScrollWidth": 761,
+          "docClientWidth": 761,
+          "bodyScrollWidth": 761,
+          "innerWidth": 761
+        }
+      }
+    },
+    {
+      "check": "layout home@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "home",
+        "layout": {
+          "containerWidth": 761,
+          "containerPaddingLeft": "32px",
+          "containerPaddingRight": "32px",
+          "contentWidth": 697,
+          "cardColumns": 2,
+          "cardGap": "26px",
+          "cardRadius": "18px",
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": null
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets home@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "home",
+        "count": 19,
+        "measured": 18,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "56.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "博客 v1 的内容与视觉契约",
+            "href": "/posts/blog-v1-design-contract",
+            "inline": false,
+            "offscreen": false,
+            "hit": "219.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "一条命令产出整站",
+            "href": "/posts/static-site-build-pipeline",
+            "inline": false,
+            "offscreen": false,
+            "hit": "151.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+            "href": "/posts/markdown-safety-and-links",
+            "inline": false,
+            "offscreen": false,
+            "hit": "290.0×80.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "不读时钟的可复现构建",
+            "href": "/posts/reproducible-builds-without-clock",
+            "inline": false,
+            "offscreen": false,
+            "hit": "189.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "全部文章→",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "89.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "68.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus home@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "home",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "博客 v1 的内容与视觉契约",
+          "架构",
+          "设计",
+          "一条命令产出整站",
+          "架构",
+          "构建",
+          "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+          "设计",
+          "构建",
+          "不读时钟的可复现构建",
+          "构建",
+          "全部文章→",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll archive@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "archive",
+        "metrics": {
+          "docScrollWidth": 761,
+          "docClientWidth": 761,
+          "bodyScrollWidth": 761,
+          "innerWidth": 761
+        }
+      }
+    },
+    {
+      "check": "layout archive@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "archive",
+        "layout": {
+          "containerWidth": 761,
+          "containerPaddingLeft": "32px",
+          "containerPaddingRight": "32px",
+          "contentWidth": 697,
+          "cardColumns": 2,
+          "cardGap": "26px",
+          "cardRadius": "18px",
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": null
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets archive@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "archive",
+        "count": 18,
+        "measured": 17,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "56.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "博客 v1 的内容与视觉契约",
+            "href": "/posts/blog-v1-design-contract",
+            "inline": false,
+            "offscreen": false,
+            "hit": "219.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "一条命令产出整站",
+            "href": "/posts/static-site-build-pipeline",
+            "inline": false,
+            "offscreen": false,
+            "hit": "151.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+            "href": "/posts/markdown-safety-and-links",
+            "inline": false,
+            "offscreen": false,
+            "hit": "290.0×80.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "不读时钟的可复现构建",
+            "href": "/posts/reproducible-builds-without-clock",
+            "inline": false,
+            "offscreen": false,
+            "hit": "189.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "68.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus archive@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "archive",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "博客 v1 的内容与视觉契约",
+          "架构",
+          "设计",
+          "一条命令产出整站",
+          "架构",
+          "构建",
+          "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+          "设计",
+          "构建",
+          "不读时钟的可复现构建",
+          "构建",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll tag@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "tag",
+        "metrics": {
+          "docScrollWidth": 761,
+          "docClientWidth": 761,
+          "bodyScrollWidth": 761,
+          "innerWidth": 761
+        }
+      }
+    },
+    {
+      "check": "layout tag@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "tag",
+        "layout": {
+          "containerWidth": 761,
+          "containerPaddingLeft": "32px",
+          "containerPaddingRight": "32px",
+          "contentWidth": 697,
+          "cardColumns": 2,
+          "cardGap": "26px",
+          "cardRadius": "18px",
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": null
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets tag@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "tag",
+        "count": 13,
+        "measured": 12,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "56.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "博客 v1 的内容与视觉契约",
+            "href": "/posts/blog-v1-design-contract",
+            "inline": false,
+            "offscreen": false,
+            "hit": "219.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+            "href": "/posts/markdown-safety-and-links",
+            "inline": false,
+            "offscreen": false,
+            "hit": "290.0×80.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "68.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus tag@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "tag",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "博客 v1 的内容与视觉契约",
+          "架构",
+          "设计",
+          "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+          "设计",
+          "构建",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll article@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "article",
+        "metrics": {
+          "docScrollWidth": 761,
+          "docClientWidth": 761,
+          "bodyScrollWidth": 761,
+          "innerWidth": 761
+        }
+      }
+    },
+    {
+      "check": "layout article@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "article",
+        "layout": {
+          "containerWidth": 761,
+          "containerPaddingLeft": "32px",
+          "containerPaddingRight": "32px",
+          "contentWidth": 697,
+          "cardColumns": 0,
+          "cardGap": null,
+          "cardRadius": null,
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": "16px"
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets article@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "article",
+        "count": 15,
+        "measured": 11,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "56.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "← 全部文章",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "79.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "外部链接",
+            "href": "https://docs.astro.build/en/guides/content-collections/",
+            "inline": true,
+            "offscreen": false,
+            "hit": "64.5×18.5"
+          },
+          {
+            "text": "npm ci npm run build",
+            "href": "",
+            "inline": false,
+            "offscreen": false,
+            "hit": "400.0×84.0"
+          },
+          {
+            "text": "关于页",
+            "href": "/about",
+            "inline": true,
+            "offscreen": false,
+            "hit": "48.5×18.5"
+          },
+          {
+            "text": "构建管线",
+            "href": "/posts/static-site-build-pipeline",
+            "inline": true,
+            "offscreen": false,
+            "hit": "64.5×18.5"
+          },
+          {
+            "text": "← 全部文章",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "83.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "68.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus article@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "article",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "← 全部文章",
+          "架构",
+          "设计",
+          "外部链接",
+          "npm ci npm run build",
+          "关于页",
+          "构建管线",
+          "← 全部文章",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll about@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "about",
+        "metrics": {
+          "docScrollWidth": 761,
+          "docClientWidth": 761,
+          "bodyScrollWidth": 761,
+          "innerWidth": 761
+        }
+      }
+    },
+    {
+      "check": "layout about@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "about",
+        "layout": {
+          "containerWidth": 761,
+          "containerPaddingLeft": "32px",
+          "containerPaddingRight": "32px",
+          "contentWidth": 697,
+          "cardColumns": 0,
+          "cardGap": null,
+          "cardRadius": null,
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": "16px"
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets about@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "about",
+        "count": 8,
+        "measured": 6,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "56.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "公开仓库",
+            "href": "https://github.com/asmpg/multica-blog",
+            "inline": true,
+            "offscreen": false,
+            "hit": "64.5×18.5"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "68.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus about@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "about",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "公开仓库",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll 404@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "404",
+        "metrics": {
+          "docScrollWidth": 761,
+          "docClientWidth": 761,
+          "bodyScrollWidth": 761,
+          "innerWidth": 761
+        }
+      }
+    },
+    {
+      "check": "layout 404@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "404",
+        "layout": {
+          "containerWidth": 761,
+          "containerPaddingLeft": "32px",
+          "containerPaddingRight": "32px",
+          "contentWidth": 697,
+          "cardColumns": 0,
+          "cardGap": null,
+          "cardRadius": null,
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": null
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets 404@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "404",
+        "count": 9,
+        "measured": 8,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "56.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "返回首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "63.0×44.0"
+          },
+          {
+            "text": "文章归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "63.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "68.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus 404@761",
+      "ok": true,
+      "detail": {
+        "viewport": 761,
+        "page": "404",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "返回首页",
+          "文章归档",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll home@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "home",
+        "metrics": {
+          "docScrollWidth": 768,
+          "docClientWidth": 768,
+          "bodyScrollWidth": 768,
+          "innerWidth": 768
+        }
+      }
+    },
+    {
+      "check": "layout home@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "home",
+        "layout": {
+          "containerWidth": 768,
+          "containerPaddingLeft": "32px",
+          "containerPaddingRight": "32px",
+          "contentWidth": 704,
+          "cardColumns": 2,
+          "cardGap": "26px",
+          "cardRadius": "18px",
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": null
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets home@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "home",
+        "count": 19,
+        "measured": 18,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "56.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "博客 v1 的内容与视觉契约",
+            "href": "/posts/blog-v1-design-contract",
+            "inline": false,
+            "offscreen": false,
+            "hit": "219.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "一条命令产出整站",
+            "href": "/posts/static-site-build-pipeline",
+            "inline": false,
+            "offscreen": false,
+            "hit": "151.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+            "href": "/posts/markdown-safety-and-links",
+            "inline": false,
+            "offscreen": false,
+            "hit": "293.0×80.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "不读时钟的可复现构建",
+            "href": "/posts/reproducible-builds-without-clock",
+            "inline": false,
+            "offscreen": false,
+            "hit": "189.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "全部文章→",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "89.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "68.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus home@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "home",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "博客 v1 的内容与视觉契约",
+          "架构",
+          "设计",
+          "一条命令产出整站",
+          "架构",
+          "构建",
+          "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+          "设计",
+          "构建",
+          "不读时钟的可复现构建",
+          "构建",
+          "全部文章→",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll archive@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "archive",
+        "metrics": {
+          "docScrollWidth": 768,
+          "docClientWidth": 768,
+          "bodyScrollWidth": 768,
+          "innerWidth": 768
+        }
+      }
+    },
+    {
+      "check": "layout archive@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "archive",
+        "layout": {
+          "containerWidth": 768,
+          "containerPaddingLeft": "32px",
+          "containerPaddingRight": "32px",
+          "contentWidth": 704,
+          "cardColumns": 2,
+          "cardGap": "26px",
+          "cardRadius": "18px",
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": null
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets archive@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "archive",
+        "count": 18,
+        "measured": 17,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "56.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "博客 v1 的内容与视觉契约",
+            "href": "/posts/blog-v1-design-contract",
+            "inline": false,
+            "offscreen": false,
+            "hit": "219.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "一条命令产出整站",
+            "href": "/posts/static-site-build-pipeline",
+            "inline": false,
+            "offscreen": false,
+            "hit": "151.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+            "href": "/posts/markdown-safety-and-links",
+            "inline": false,
+            "offscreen": false,
+            "hit": "293.0×80.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "不读时钟的可复现构建",
+            "href": "/posts/reproducible-builds-without-clock",
+            "inline": false,
+            "offscreen": false,
+            "hit": "189.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "68.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus archive@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "archive",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "博客 v1 的内容与视觉契约",
+          "架构",
+          "设计",
+          "一条命令产出整站",
+          "架构",
+          "构建",
+          "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+          "设计",
+          "构建",
+          "不读时钟的可复现构建",
+          "构建",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll tag@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "tag",
+        "metrics": {
+          "docScrollWidth": 768,
+          "docClientWidth": 768,
+          "bodyScrollWidth": 768,
+          "innerWidth": 768
+        }
+      }
+    },
+    {
+      "check": "layout tag@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "tag",
+        "layout": {
+          "containerWidth": 768,
+          "containerPaddingLeft": "32px",
+          "containerPaddingRight": "32px",
+          "contentWidth": 704,
+          "cardColumns": 2,
+          "cardGap": "26px",
+          "cardRadius": "18px",
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": null
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets tag@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "tag",
+        "count": 13,
+        "measured": 12,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "56.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "博客 v1 的内容与视觉契约",
+            "href": "/posts/blog-v1-design-contract",
+            "inline": false,
+            "offscreen": false,
+            "hit": "219.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+            "href": "/posts/markdown-safety-and-links",
+            "inline": false,
+            "offscreen": false,
+            "hit": "293.0×80.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "68.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus tag@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "tag",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "博客 v1 的内容与视觉契约",
+          "架构",
+          "设计",
+          "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+          "设计",
+          "构建",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll article@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "article",
+        "metrics": {
+          "docScrollWidth": 768,
+          "docClientWidth": 768,
+          "bodyScrollWidth": 768,
+          "innerWidth": 768
+        }
+      }
+    },
+    {
+      "check": "layout article@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "article",
+        "layout": {
+          "containerWidth": 768,
+          "containerPaddingLeft": "32px",
+          "containerPaddingRight": "32px",
+          "contentWidth": 704,
+          "cardColumns": 0,
+          "cardGap": null,
+          "cardRadius": null,
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": "16px"
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets article@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "article",
+        "count": 15,
+        "measured": 11,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "56.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "← 全部文章",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "79.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "外部链接",
+            "href": "https://docs.astro.build/en/guides/content-collections/",
+            "inline": true,
+            "offscreen": false,
+            "hit": "64.5×18.5"
+          },
+          {
+            "text": "npm ci npm run build",
+            "href": "",
+            "inline": false,
+            "offscreen": false,
+            "hit": "400.0×84.0"
+          },
+          {
+            "text": "关于页",
+            "href": "/about",
+            "inline": true,
+            "offscreen": false,
+            "hit": "48.5×18.5"
+          },
+          {
+            "text": "构建管线",
+            "href": "/posts/static-site-build-pipeline",
+            "inline": true,
+            "offscreen": false,
+            "hit": "64.5×18.5"
+          },
+          {
+            "text": "← 全部文章",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "83.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "68.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus article@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "article",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "← 全部文章",
+          "架构",
+          "设计",
+          "外部链接",
+          "npm ci npm run build",
+          "关于页",
+          "构建管线",
+          "← 全部文章",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll about@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "about",
+        "metrics": {
+          "docScrollWidth": 768,
+          "docClientWidth": 768,
+          "bodyScrollWidth": 768,
+          "innerWidth": 768
+        }
+      }
+    },
+    {
+      "check": "layout about@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "about",
+        "layout": {
+          "containerWidth": 768,
+          "containerPaddingLeft": "32px",
+          "containerPaddingRight": "32px",
+          "contentWidth": 704,
+          "cardColumns": 0,
+          "cardGap": null,
+          "cardRadius": null,
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": "16px"
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets about@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "about",
+        "count": 8,
+        "measured": 6,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "56.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "公开仓库",
+            "href": "https://github.com/asmpg/multica-blog",
+            "inline": true,
+            "offscreen": false,
+            "hit": "64.5×18.5"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "68.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus about@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "about",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "公开仓库",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll 404@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "404",
+        "metrics": {
+          "docScrollWidth": 768,
+          "docClientWidth": 768,
+          "bodyScrollWidth": 768,
+          "innerWidth": 768
+        }
+      }
+    },
+    {
+      "check": "layout 404@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "404",
+        "layout": {
+          "containerWidth": 768,
+          "containerPaddingLeft": "32px",
+          "containerPaddingRight": "32px",
+          "contentWidth": 704,
+          "cardColumns": 0,
+          "cardGap": null,
+          "cardRadius": null,
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": null
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets 404@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "404",
+        "count": 9,
+        "measured": 8,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "56.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "返回首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "63.0×44.0"
+          },
+          {
+            "text": "文章归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "63.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "68.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus 404@768",
+      "ok": true,
+      "detail": {
+        "viewport": 768,
+        "page": "404",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "返回首页",
+          "文章归档",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll home@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "home",
+        "metrics": {
+          "docScrollWidth": 1440,
+          "docClientWidth": 1440,
+          "bodyScrollWidth": 1440,
+          "innerWidth": 1440
+        }
+      }
+    },
+    {
+      "check": "layout home@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "home",
+        "layout": {
+          "containerWidth": 820,
+          "containerPaddingLeft": "32px",
+          "containerPaddingRight": "32px",
+          "contentWidth": 756,
+          "cardColumns": 2,
+          "cardGap": "26px",
+          "cardRadius": "18px",
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": null
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets home@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "home",
+        "count": 19,
+        "measured": 18,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "56.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "博客 v1 的内容与视觉契约",
+            "href": "/posts/blog-v1-design-contract",
+            "inline": false,
+            "offscreen": false,
+            "hit": "219.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "一条命令产出整站",
+            "href": "/posts/static-site-build-pipeline",
+            "inline": false,
+            "offscreen": false,
+            "hit": "151.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+            "href": "/posts/markdown-safety-and-links",
+            "inline": false,
+            "offscreen": false,
+            "hit": "319.0×80.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "不读时钟的可复现构建",
+            "href": "/posts/reproducible-builds-without-clock",
+            "inline": false,
+            "offscreen": false,
+            "hit": "189.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "全部文章→",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "89.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "68.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus home@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "home",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "博客 v1 的内容与视觉契约",
+          "架构",
+          "设计",
+          "一条命令产出整站",
+          "架构",
+          "构建",
+          "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+          "设计",
+          "构建",
+          "不读时钟的可复现构建",
+          "构建",
+          "全部文章→",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll archive@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "archive",
+        "metrics": {
+          "docScrollWidth": 1440,
+          "docClientWidth": 1440,
+          "bodyScrollWidth": 1440,
+          "innerWidth": 1440
+        }
+      }
+    },
+    {
+      "check": "layout archive@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "archive",
+        "layout": {
+          "containerWidth": 820,
+          "containerPaddingLeft": "32px",
+          "containerPaddingRight": "32px",
+          "contentWidth": 756,
+          "cardColumns": 2,
+          "cardGap": "26px",
+          "cardRadius": "18px",
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": null
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets archive@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "archive",
+        "count": 18,
+        "measured": 17,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "56.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "博客 v1 的内容与视觉契约",
+            "href": "/posts/blog-v1-design-contract",
+            "inline": false,
+            "offscreen": false,
+            "hit": "219.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "一条命令产出整站",
+            "href": "/posts/static-site-build-pipeline",
+            "inline": false,
+            "offscreen": false,
+            "hit": "151.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+            "href": "/posts/markdown-safety-and-links",
+            "inline": false,
+            "offscreen": false,
+            "hit": "319.0×80.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "不读时钟的可复现构建",
+            "href": "/posts/reproducible-builds-without-clock",
+            "inline": false,
+            "offscreen": false,
+            "hit": "189.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "68.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus archive@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "archive",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "博客 v1 的内容与视觉契约",
+          "架构",
+          "设计",
+          "一条命令产出整站",
+          "架构",
+          "构建",
+          "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+          "设计",
+          "构建",
+          "不读时钟的可复现构建",
+          "构建",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll tag@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "tag",
+        "metrics": {
+          "docScrollWidth": 1440,
+          "docClientWidth": 1440,
+          "bodyScrollWidth": 1440,
+          "innerWidth": 1440
+        }
+      }
+    },
+    {
+      "check": "layout tag@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "tag",
+        "layout": {
+          "containerWidth": 820,
+          "containerPaddingLeft": "32px",
+          "containerPaddingRight": "32px",
+          "contentWidth": 756,
+          "cardColumns": 2,
+          "cardGap": "26px",
+          "cardRadius": "18px",
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": null
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets tag@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "tag",
+        "count": 13,
+        "measured": 12,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "56.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "博客 v1 的内容与视觉契约",
+            "href": "/posts/blog-v1-design-contract",
+            "inline": false,
+            "offscreen": false,
+            "hit": "219.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+            "href": "/posts/markdown-safety-and-links",
+            "inline": false,
+            "offscreen": false,
+            "hit": "319.0×80.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "构建",
+            "href": "/tags/build",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "68.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus tag@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "tag",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "博客 v1 的内容与视觉契约",
+          "架构",
+          "设计",
+          "从原始 HTML 到可渲染正文：Markdown 安全边界与链接校验的完整实践记",
+          "设计",
+          "构建",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll article@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "article",
+        "metrics": {
+          "docScrollWidth": 1440,
+          "docClientWidth": 1440,
+          "bodyScrollWidth": 1440,
+          "innerWidth": 1440
+        }
+      }
+    },
+    {
+      "check": "layout article@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "article",
+        "layout": {
+          "containerWidth": 820,
+          "containerPaddingLeft": "32px",
+          "containerPaddingRight": "32px",
+          "contentWidth": 756,
+          "cardColumns": 0,
+          "cardGap": null,
+          "cardRadius": null,
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": "16px"
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets article@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "article",
+        "count": 15,
+        "measured": 11,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "56.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "← 全部文章",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "79.0×44.0"
+          },
+          {
+            "text": "架构",
+            "href": "/tags/architecture",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "设计",
+            "href": "/tags/design",
+            "inline": false,
+            "offscreen": false,
+            "hit": "51.0×44.0"
+          },
+          {
+            "text": "外部链接",
+            "href": "https://docs.astro.build/en/guides/content-collections/",
+            "inline": true,
+            "offscreen": false,
+            "hit": "64.5×18.5"
+          },
+          {
+            "text": "npm ci npm run build",
+            "href": "",
+            "inline": false,
+            "offscreen": false,
+            "hit": "400.0×83.5"
+          },
+          {
+            "text": "关于页",
+            "href": "/about",
+            "inline": true,
+            "offscreen": false,
+            "hit": "48.5×18.5"
+          },
+          {
+            "text": "构建管线",
+            "href": "/posts/static-site-build-pipeline",
+            "inline": true,
+            "offscreen": false,
+            "hit": "64.5×18.5"
+          },
+          {
+            "text": "← 全部文章",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "83.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "68.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus article@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "article",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "← 全部文章",
+          "架构",
+          "设计",
+          "外部链接",
+          "npm ci npm run build",
+          "关于页",
+          "构建管线",
+          "← 全部文章",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll about@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "about",
+        "metrics": {
+          "docScrollWidth": 1440,
+          "docClientWidth": 1440,
+          "bodyScrollWidth": 1440,
+          "innerWidth": 1440
+        }
+      }
+    },
+    {
+      "check": "layout about@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "about",
+        "layout": {
+          "containerWidth": 820,
+          "containerPaddingLeft": "32px",
+          "containerPaddingRight": "32px",
+          "contentWidth": 756,
+          "cardColumns": 0,
+          "cardGap": null,
+          "cardRadius": null,
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": "16px"
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets about@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "about",
+        "count": 8,
+        "measured": 6,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "56.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "公开仓库",
+            "href": "https://github.com/asmpg/multica-blog",
+            "inline": true,
+            "offscreen": false,
+            "hit": "64.5×18.5"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "68.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus about@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "about",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "公开仓库",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "no-root-hscroll 404@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "404",
+        "metrics": {
+          "docScrollWidth": 1440,
+          "docClientWidth": 1440,
+          "bodyScrollWidth": 1440,
+          "innerWidth": 1440
+        }
+      }
+    },
+    {
+      "check": "layout 404@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "404",
+        "layout": {
+          "containerWidth": 820,
+          "containerPaddingLeft": "32px",
+          "containerPaddingRight": "32px",
+          "contentWidth": 756,
+          "cardColumns": 0,
+          "cardGap": null,
+          "cardRadius": null,
+          "bodyFontSize": "16px",
+          "bodyLineHeight": "24px",
+          "articleBodyFontSize": null
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "hit-targets 404@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "404",
+        "count": 9,
+        "measured": 8,
+        "minWidth": "44.0",
+        "minHeight": "44.0",
+        "items": [
+          {
+            "text": "跳至正文",
+            "href": "#main",
+            "inline": false,
+            "offscreen": true,
+            "hit": null
+          },
+          {
+            "text": "博客 v1",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "56.0×44.0"
+          },
+          {
+            "text": "首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "关于",
+            "href": "/about",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "返回首页",
+            "href": "/",
+            "inline": false,
+            "offscreen": false,
+            "hit": "63.0×44.0"
+          },
+          {
+            "text": "文章归档",
+            "href": "/archive",
+            "inline": false,
+            "offscreen": false,
+            "hit": "63.0×44.0"
+          },
+          {
+            "text": "RSS",
+            "href": "/rss.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "44.0×44.0"
+          },
+          {
+            "text": "站点地图",
+            "href": "/sitemap.xml",
+            "inline": false,
+            "offscreen": false,
+            "hit": "68.0×44.0"
+          }
+        ],
+        "failures": []
+      }
+    },
+    {
+      "check": "focus 404@1440",
+      "ok": true,
+      "detail": {
+        "viewport": 1440,
+        "page": "404",
+        "order": [
+          "跳至正文",
+          "博客 v1",
+          "首页",
+          "归档",
+          "关于",
+          "返回首页",
+          "文章归档",
+          "RSS",
+          "站点地图"
+        ],
+        "skipLink": {
+          "hittable": true,
+          "width": 84,
+          "height": 44
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "state fine-pointer-hover",
+      "ok": true,
+      "detail": {
+        "before": {
+          "card": {
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "boxShadow": "none",
+            "borderColor": "rgb(232, 232, 232)",
+            "transitionDuration": "0.45s, 0.7s, 0.7s",
+            "backgroundSize": "auto",
+            "outlineWidth": "3px"
+          },
+          "cover": {
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "boxShadow": "none",
+            "borderColor": "rgb(26, 26, 26)",
+            "transitionDuration": "0.8s",
+            "backgroundSize": "auto",
+            "outlineWidth": "3px"
+          },
+          "title": {
+            "transform": "none",
+            "boxShadow": "none",
+            "borderColor": "rgb(26, 26, 26)",
+            "transitionDuration": "0.6s",
+            "backgroundSize": "0% 42%",
+            "outlineWidth": "3px"
+          }
+        },
+        "hovered": {
+          "card": {
+            "transform": "matrix(1, 0, 0, 1, 0, -5)",
+            "boxShadow": "rgba(0, 0, 0, 0.04) 0px 3px 6px 0px, rgba(0, 0, 0, 0.18) 0px 26px 48px -18px",
+            "borderColor": "rgb(213, 213, 213)",
+            "transitionDuration": "0.45s, 0.7s, 0.7s",
+            "backgroundSize": "auto",
+            "outlineWidth": "3px"
+          },
+          "cover": {
+            "transform": "matrix(1.04, 0, 0, 1.04, 0, 0)",
+            "boxShadow": "none",
+            "borderColor": "rgb(26, 26, 26)",
+            "transitionDuration": "0.8s",
+            "backgroundSize": "auto",
+            "outlineWidth": "3px"
+          },
+          "title": {
+            "transform": "none",
+            "boxShadow": "none",
+            "borderColor": "rgb(26, 26, 26)",
+            "transitionDuration": "0.6s",
+            "backgroundSize": "100% 42%",
+            "outlineWidth": "3px"
+          },
+          "hoverNone": false,
+          "reduce": false
+        },
+        "cardTransform": {
+          "raw": "matrix(1, 0, 0, 1, 0, -5)",
+          "scale": 1,
+          "translateX": 0,
+          "translateY": -5
+        },
+        "coverTransform": {
+          "raw": "matrix(1.04, 0, 0, 1.04, 0, 0)",
+          "scale": 1.04,
+          "translateX": 0,
+          "translateY": 0
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "state reduced-motion",
+      "ok": true,
+      "detail": {
+        "media": true,
+        "hover": {
+          "card": {
+            "raw": "none",
+            "scale": 1,
+            "translateX": 0,
+            "translateY": 0
+          },
+          "cover": {
+            "raw": "none",
+            "scale": 1,
+            "translateX": 0,
+            "translateY": 0
+          },
+          "cardStyle": {
+            "transform": "none",
+            "boxShadow": "rgba(0, 0, 0, 0.04) 0px 3px 6px 0px, rgba(0, 0, 0, 0.18) 0px 26px 48px -18px",
+            "borderColor": "rgb(213, 213, 213)",
+            "transitionDuration": "0.01s",
+            "backgroundSize": "auto",
+            "outlineWidth": "3px"
+          },
+          "more": {
+            "raw": "none",
+            "scale": 1,
+            "translateX": 0,
+            "translateY": 0
+          }
+        },
+        "moreHover": {
+          "raw": "none",
+          "scale": 1,
+          "translateX": 0,
+          "translateY": 0
+        },
+        "focusWithin": {
+          "card": {
+            "raw": "none",
+            "scale": 1,
+            "translateX": 0,
+            "translateY": 0
+          },
+          "cover": {
+            "raw": "none",
+            "scale": 1,
+            "translateX": 0,
+            "translateY": 0
+          },
+          "cardStyle": {
+            "transform": "none",
+            "boxShadow": "rgba(0, 0, 0, 0.04) 0px 3px 6px 0px, rgba(0, 0, 0, 0.18) 0px 26px 48px -18px",
+            "borderColor": "rgb(213, 213, 213)",
+            "transitionDuration": "0.01s",
+            "backgroundSize": "auto",
+            "outlineWidth": "3px"
+          },
+          "outlineWidth": "2px",
+          "outlineColor": "rgb(26, 26, 26)"
+        },
+        "failures": []
+      }
+    },
+    {
+      "check": "state touch-hover-none",
+      "ok": true,
+      "detail": {
+        "media": {
+          "hoverNone": true,
+          "pointerCoarse": true
+        },
+        "after": {
+          "card": {
+            "raw": "matrix(1, 0, 0, 1, 0, 0)",
+            "scale": 1,
+            "translateX": 0,
+            "translateY": 0
+          },
+          "cover": {
+            "raw": "matrix(1, 0, 0, 1, 0, 0)",
+            "scale": 1,
+            "translateX": 0,
+            "translateY": 0
+          },
+          "cardStyle": {
+            "transform": "matrix(1, 0, 0, 1, 0, 0)",
+            "boxShadow": "none",
+            "borderColor": "rgb(232, 232, 232)",
+            "transitionDuration": "0.45s, 0.7s, 0.7s",
+            "backgroundSize": "auto",
+            "outlineWidth": "3px"
+          },
+          "hoveredElement": "acard"
+        },
+        "outline": {
+          "width": "2px",
+          "style": "solid",
+          "color": "rgb(26, 26, 26)",
+          "offset": "2px"
+        },
+        "failures": []
+      }
+    }
+  ]
+}

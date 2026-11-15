@@ -13,7 +13,7 @@ const { tags, label } = Astro.props;
   {
     tags.map((tag) => (
       <li>
-        <a class="chip" href={tag.path}>
+        <a class="chip tap" href={tag.path}>
           {tag.name}
         </a>
       </li>
