@@ -1,0 +1,12 @@
+[
+  {
+    "id": "blog-team",
+    "name": "测试作者",
+    "avatar": {
+      "src": "/content/pixel.png",
+      "alt": "作者头像",
+      "width": 8,
+      "height": 8
+    }
+  }
+]

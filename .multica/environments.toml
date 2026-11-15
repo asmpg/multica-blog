@@ -1,0 +1,4 @@
+[environments.web]
+label = "博客预览"
+start = "export PATH=/Users/cwc/.local/share/fnm/node-versions/v24.15.0/installation/bin:$PATH && npm ci && npx astro dev --port $MULTICA_PORT --host 127.0.0.1"
+ttl = "168h"

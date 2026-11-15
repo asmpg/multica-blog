@@ -1,0 +1,5 @@
+[
+  { "slug": "architecture", "name": "架构", "description": "内容模型与技术边界的记录。" },
+  { "slug": "design", "name": "设计", "description": "视觉取证与界面规范的记录。" },
+  { "slug": "build", "name": "构建", "description": "静态构建、校验与可复现性。" }
+]

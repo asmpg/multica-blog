@@ -1,0 +1,1973 @@
+{
+  "consoleErrors": [
+    "[1440] http://127.0.0.1:4321/nope-does-not-exist Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "[768] http://127.0.0.1:4321/nope-does-not-exist Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "[761] http://127.0.0.1:4321/nope-does-not-exist Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "[760] http://127.0.0.1:4321/nope-does-not-exist Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "[375] http://127.0.0.1:4321/nope-does-not-exist Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "badResponses": [],
+  "layout": [],
+  "pages": {
+    "1440/": {
+      "status": 200,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "col": {
+        "x": 310,
+        "y": 0,
+        "width": 820,
+        "height": 1862.09375,
+        "top": 0,
+        "right": 1130,
+        "bottom": 1862.09375,
+        "left": 310
+      },
+      "alist": {
+        "columns": "365px 365px",
+        "gap": "26px"
+      },
+      "card": {
+        "width": 365,
+        "height": 395.96875
+      },
+      "title": "首页 · 博客 v1",
+      "canonical": "http://localhost:4321/",
+      "robots": null,
+      "description": "记录博客 v1 的内容、设计与建设过程。",
+      "ogType": "website",
+      "ogTitle": "首页 · 博客 v1",
+      "h1": "最新文章",
+      "lang": "zh-CN",
+      "pagination": [],
+      "imgAlts": [
+        "博客内容模型与视觉规范两份文档的示意图",
+        "一叠标有安全检查标记的文档"
+      ]
+    },
+    "1440/posts/blog-v1-design-contract": {
+      "status": 200,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "col": {
+        "x": 310,
+        "y": 0,
+        "width": 820,
+        "height": 2911.296875,
+        "top": 0,
+        "right": 1130,
+        "bottom": 2911.296875,
+        "left": 310
+      },
+      "alist": null,
+      "card": null,
+      "title": "博客 v1：固定内容与视觉契约 · 博客 v1",
+      "canonical": "http://localhost:4321/posts/blog-v1-design-contract",
+      "robots": null,
+      "description": "记录博客 v1 采用的静态内容方式，以及 URL、发布状态和可访问性规范的边界。",
+      "ogType": "article",
+      "ogTitle": "博客 v1：固定内容与视觉契约 · 博客 v1",
+      "h1": "博客 v1 的内容与视觉契约",
+      "lang": "zh-CN",
+      "pagination": [],
+      "imgAlts": [
+        "博客内容模型与视觉规范两份文档的示意图",
+        "构建管线示意"
+      ]
+    },
+    "1440/archive": {
+      "status": 200,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "col": {
+        "x": 310,
+        "y": 0,
+        "width": 820,
+        "height": 1871.6875,
+        "top": 0,
+        "right": 1130,
+        "bottom": 1871.6875,
+        "left": 310
+      },
+      "alist": {
+        "columns": "365px 365px",
+        "gap": "26px"
+      },
+      "card": {
+        "width": 365,
+        "height": 395.96875
+      },
+      "title": "文章归档 · 博客 v1",
+      "canonical": "http://localhost:4321/archive",
+      "robots": null,
+      "description": "全部已发布文章，第 1 页，共 2 页。",
+      "ogType": "website",
+      "ogTitle": "文章归档 · 博客 v1",
+      "h1": "文章归档",
+      "lang": "zh-CN",
+      "pagination": [
+        {
+          "text": "上一页",
+          "tag": "SPAN",
+          "href": null,
+          "current": null
+        },
+        {
+          "text": "第 1 / 2 页",
+          "tag": "SPAN",
+          "href": null,
+          "current": "page"
+        },
+        {
+          "text": "下一页",
+          "tag": "A",
+          "href": "/archive/page/2",
+          "current": null
+        }
+      ],
+      "imgAlts": [
+        "博客内容模型与视觉规范两份文档的示意图",
+        "一叠标有安全检查标记的文档"
+      ]
+    },
+    "1440/archive/page/2": {
+      "status": 200,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "col": {
+        "x": 310,
+        "y": 0,
+        "width": 820,
+        "height": 1000,
+        "top": 0,
+        "right": 1130,
+        "bottom": 1000,
+        "left": 310
+      },
+      "alist": {
+        "columns": "365px 365px",
+        "gap": "26px"
+      },
+      "card": {
+        "width": 365,
+        "height": 395.96875
+      },
+      "title": "文章归档（第 2 页） · 博客 v1",
+      "canonical": "http://localhost:4321/archive/page/2",
+      "robots": null,
+      "description": "全部已发布文章，第 2 页，共 2 页。",
+      "ogType": "website",
+      "ogTitle": "文章归档（第 2 页） · 博客 v1",
+      "h1": "文章归档（第 2 页）",
+      "lang": "zh-CN",
+      "pagination": [
+        {
+          "text": "上一页",
+          "tag": "A",
+          "href": "/archive",
+          "current": null
+        },
+        {
+          "text": "第 2 / 2 页",
+          "tag": "SPAN",
+          "href": null,
+          "current": "page"
+        },
+        {
+          "text": "下一页",
+          "tag": "SPAN",
+          "href": null,
+          "current": null
+        }
+      ],
+      "imgAlts": []
+    },
+    "1440/tags/design": {
+      "status": 200,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "col": {
+        "x": 310,
+        "y": 0,
+        "width": 820,
+        "height": 1000,
+        "top": 0,
+        "right": 1130,
+        "bottom": 1000,
+        "left": 310
+      },
+      "alist": {
+        "columns": "365px 365px",
+        "gap": "26px"
+      },
+      "card": {
+        "width": 365,
+        "height": 449.15625
+      },
+      "title": "标签：设计 · 博客 v1",
+      "canonical": "http://localhost:4321/tags/design",
+      "robots": null,
+      "description": "视觉取证与界面规范的记录。",
+      "ogType": "website",
+      "ogTitle": "标签：设计 · 博客 v1",
+      "h1": "标签：设计",
+      "lang": "zh-CN",
+      "pagination": [],
+      "imgAlts": [
+        "博客内容模型与视觉规范两份文档的示意图",
+        "一叠标有安全检查标记的文档"
+      ]
+    },
+    "1440/about": {
+      "status": 200,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "col": {
+        "x": 310,
+        "y": 0,
+        "width": 820,
+        "height": 1000,
+        "top": 0,
+        "right": 1130,
+        "bottom": 1000,
+        "left": 310
+      },
+      "alist": null,
+      "card": null,
+      "title": "关于 · 博客 v1",
+      "canonical": "http://localhost:4321/about",
+      "robots": null,
+      "description": "介绍博客 v1 的建设目标。",
+      "ogType": "website",
+      "ogTitle": "关于 · 博客 v1",
+      "h1": "关于",
+      "lang": "zh-CN",
+      "pagination": [],
+      "imgAlts": []
+    },
+    "1440/nope-does-not-exist": {
+      "status": 404,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "col": {
+        "x": 310,
+        "y": 0,
+        "width": 820,
+        "height": 1000,
+        "top": 0,
+        "right": 1130,
+        "bottom": 1000,
+        "left": 310
+      },
+      "alist": null,
+      "card": null,
+      "title": "页面不存在 · 博客 v1",
+      "canonical": null,
+      "robots": "noindex, follow",
+      "description": "请求的页面不存在，请返回首页或文章归档。",
+      "ogType": "website",
+      "ogTitle": "页面不存在 · 博客 v1",
+      "h1": "页面不存在",
+      "lang": "zh-CN",
+      "pagination": [],
+      "imgAlts": []
+    },
+    "768/": {
+      "status": 200,
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 1818.21875,
+        "top": 0,
+        "right": 768,
+        "bottom": 1818.21875,
+        "left": 0
+      },
+      "alist": {
+        "columns": "339px 339px",
+        "gap": "26px"
+      },
+      "card": {
+        "width": 339,
+        "height": 381.34375
+      },
+      "title": "首页 · 博客 v1",
+      "canonical": "http://localhost:4321/",
+      "robots": null,
+      "description": "记录博客 v1 的内容、设计与建设过程。",
+      "ogType": "website",
+      "ogTitle": "首页 · 博客 v1",
+      "h1": "最新文章",
+      "lang": "zh-CN",
+      "pagination": [],
+      "imgAlts": [
+        "博客内容模型与视觉规范两份文档的示意图",
+        "一叠标有安全检查标记的文档"
+      ]
+    },
+    "768/posts/blog-v1-design-contract": {
+      "status": 200,
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 2819.953125,
+        "top": 0,
+        "right": 768,
+        "bottom": 2819.953125,
+        "left": 0
+      },
+      "alist": null,
+      "card": null,
+      "title": "博客 v1：固定内容与视觉契约 · 博客 v1",
+      "canonical": "http://localhost:4321/posts/blog-v1-design-contract",
+      "robots": null,
+      "description": "记录博客 v1 采用的静态内容方式，以及 URL、发布状态和可访问性规范的边界。",
+      "ogType": "article",
+      "ogTitle": "博客 v1：固定内容与视觉契约 · 博客 v1",
+      "h1": "博客 v1 的内容与视觉契约",
+      "lang": "zh-CN",
+      "pagination": [],
+      "imgAlts": [
+        "博客内容模型与视觉规范两份文档的示意图",
+        "构建管线示意"
+      ]
+    },
+    "768/archive": {
+      "status": 200,
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 1827.8125,
+        "top": 0,
+        "right": 768,
+        "bottom": 1827.8125,
+        "left": 0
+      },
+      "alist": {
+        "columns": "339px 339px",
+        "gap": "26px"
+      },
+      "card": {
+        "width": 339,
+        "height": 381.34375
+      },
+      "title": "文章归档 · 博客 v1",
+      "canonical": "http://localhost:4321/archive",
+      "robots": null,
+      "description": "全部已发布文章，第 1 页，共 2 页。",
+      "ogType": "website",
+      "ogTitle": "文章归档 · 博客 v1",
+      "h1": "文章归档",
+      "lang": "zh-CN",
+      "pagination": [
+        {
+          "text": "上一页",
+          "tag": "SPAN",
+          "href": null,
+          "current": null
+        },
+        {
+          "text": "第 1 / 2 页",
+          "tag": "SPAN",
+          "href": null,
+          "current": "page"
+        },
+        {
+          "text": "下一页",
+          "tag": "A",
+          "href": "/archive/page/2",
+          "current": null
+        }
+      ],
+      "imgAlts": [
+        "博客内容模型与视觉规范两份文档的示意图",
+        "一叠标有安全检查标记的文档"
+      ]
+    },
+    "768/archive/page/2": {
+      "status": 200,
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 1000,
+        "top": 0,
+        "right": 768,
+        "bottom": 1000,
+        "left": 0
+      },
+      "alist": {
+        "columns": "339px 339px",
+        "gap": "26px"
+      },
+      "card": {
+        "width": 339,
+        "height": 381.34375
+      },
+      "title": "文章归档（第 2 页） · 博客 v1",
+      "canonical": "http://localhost:4321/archive/page/2",
+      "robots": null,
+      "description": "全部已发布文章，第 2 页，共 2 页。",
+      "ogType": "website",
+      "ogTitle": "文章归档（第 2 页） · 博客 v1",
+      "h1": "文章归档（第 2 页）",
+      "lang": "zh-CN",
+      "pagination": [
+        {
+          "text": "上一页",
+          "tag": "A",
+          "href": "/archive",
+          "current": null
+        },
+        {
+          "text": "第 2 / 2 页",
+          "tag": "SPAN",
+          "href": null,
+          "current": "page"
+        },
+        {
+          "text": "下一页",
+          "tag": "SPAN",
+          "href": null,
+          "current": null
+        }
+      ],
+      "imgAlts": []
+    },
+    "768/tags/design": {
+      "status": 200,
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 1000,
+        "top": 0,
+        "right": 768,
+        "bottom": 1000,
+        "left": 0
+      },
+      "alist": {
+        "columns": "339px 339px",
+        "gap": "26px"
+      },
+      "card": {
+        "width": 339,
+        "height": 434.53125
+      },
+      "title": "标签：设计 · 博客 v1",
+      "canonical": "http://localhost:4321/tags/design",
+      "robots": null,
+      "description": "视觉取证与界面规范的记录。",
+      "ogType": "website",
+      "ogTitle": "标签：设计 · 博客 v1",
+      "h1": "标签：设计",
+      "lang": "zh-CN",
+      "pagination": [],
+      "imgAlts": [
+        "博客内容模型与视觉规范两份文档的示意图",
+        "一叠标有安全检查标记的文档"
+      ]
+    },
+    "768/about": {
+      "status": 200,
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 1000,
+        "top": 0,
+        "right": 768,
+        "bottom": 1000,
+        "left": 0
+      },
+      "alist": null,
+      "card": null,
+      "title": "关于 · 博客 v1",
+      "canonical": "http://localhost:4321/about",
+      "robots": null,
+      "description": "介绍博客 v1 的建设目标。",
+      "ogType": "website",
+      "ogTitle": "关于 · 博客 v1",
+      "h1": "关于",
+      "lang": "zh-CN",
+      "pagination": [],
+      "imgAlts": []
+    },
+    "768/nope-does-not-exist": {
+      "status": 404,
+      "scrollWidth": 768,
+      "clientWidth": 768,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 1000,
+        "top": 0,
+        "right": 768,
+        "bottom": 1000,
+        "left": 0
+      },
+      "alist": null,
+      "card": null,
+      "title": "页面不存在 · 博客 v1",
+      "canonical": null,
+      "robots": "noindex, follow",
+      "description": "请求的页面不存在，请返回首页或文章归档。",
+      "ogType": "website",
+      "ogTitle": "页面不存在 · 博客 v1",
+      "h1": "页面不存在",
+      "lang": "zh-CN",
+      "pagination": [],
+      "imgAlts": []
+    },
+    "761/": {
+      "status": 200,
+      "scrollWidth": 761,
+      "clientWidth": 761,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 761,
+        "height": 1812.3125,
+        "top": 0,
+        "right": 761,
+        "bottom": 1812.3125,
+        "left": 0
+      },
+      "alist": {
+        "columns": "335.5px 335.5px",
+        "gap": "26px"
+      },
+      "card": {
+        "width": 335.5,
+        "height": 379.375
+      },
+      "title": "首页 · 博客 v1",
+      "canonical": "http://localhost:4321/",
+      "robots": null,
+      "description": "记录博客 v1 的内容、设计与建设过程。",
+      "ogType": "website",
+      "ogTitle": "首页 · 博客 v1",
+      "h1": "最新文章",
+      "lang": "zh-CN",
+      "pagination": [],
+      "imgAlts": [
+        "博客内容模型与视觉规范两份文档的示意图",
+        "一叠标有安全检查标记的文档"
+      ]
+    },
+    "761/posts/blog-v1-design-contract": {
+      "status": 200,
+      "scrollWidth": 761,
+      "clientWidth": 761,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 761,
+        "height": 2809.796875,
+        "top": 0,
+        "right": 761,
+        "bottom": 2809.796875,
+        "left": 0
+      },
+      "alist": null,
+      "card": null,
+      "title": "博客 v1：固定内容与视觉契约 · 博客 v1",
+      "canonical": "http://localhost:4321/posts/blog-v1-design-contract",
+      "robots": null,
+      "description": "记录博客 v1 采用的静态内容方式，以及 URL、发布状态和可访问性规范的边界。",
+      "ogType": "article",
+      "ogTitle": "博客 v1：固定内容与视觉契约 · 博客 v1",
+      "h1": "博客 v1 的内容与视觉契约",
+      "lang": "zh-CN",
+      "pagination": [],
+      "imgAlts": [
+        "博客内容模型与视觉规范两份文档的示意图",
+        "构建管线示意"
+      ]
+    },
+    "761/archive": {
+      "status": 200,
+      "scrollWidth": 761,
+      "clientWidth": 761,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 761,
+        "height": 1821.90625,
+        "top": 0,
+        "right": 761,
+        "bottom": 1821.90625,
+        "left": 0
+      },
+      "alist": {
+        "columns": "335.5px 335.5px",
+        "gap": "26px"
+      },
+      "card": {
+        "width": 335.5,
+        "height": 379.375
+      },
+      "title": "文章归档 · 博客 v1",
+      "canonical": "http://localhost:4321/archive",
+      "robots": null,
+      "description": "全部已发布文章，第 1 页，共 2 页。",
+      "ogType": "website",
+      "ogTitle": "文章归档 · 博客 v1",
+      "h1": "文章归档",
+      "lang": "zh-CN",
+      "pagination": [
+        {
+          "text": "上一页",
+          "tag": "SPAN",
+          "href": null,
+          "current": null
+        },
+        {
+          "text": "第 1 / 2 页",
+          "tag": "SPAN",
+          "href": null,
+          "current": "page"
+        },
+        {
+          "text": "下一页",
+          "tag": "A",
+          "href": "/archive/page/2",
+          "current": null
+        }
+      ],
+      "imgAlts": [
+        "博客内容模型与视觉规范两份文档的示意图",
+        "一叠标有安全检查标记的文档"
+      ]
+    },
+    "761/archive/page/2": {
+      "status": 200,
+      "scrollWidth": 761,
+      "clientWidth": 761,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 761,
+        "height": 1000,
+        "top": 0,
+        "right": 761,
+        "bottom": 1000,
+        "left": 0
+      },
+      "alist": {
+        "columns": "335.5px 335.5px",
+        "gap": "26px"
+      },
+      "card": {
+        "width": 335.5,
+        "height": 379.375
+      },
+      "title": "文章归档（第 2 页） · 博客 v1",
+      "canonical": "http://localhost:4321/archive/page/2",
+      "robots": null,
+      "description": "全部已发布文章，第 2 页，共 2 页。",
+      "ogType": "website",
+      "ogTitle": "文章归档（第 2 页） · 博客 v1",
+      "h1": "文章归档（第 2 页）",
+      "lang": "zh-CN",
+      "pagination": [
+        {
+          "text": "上一页",
+          "tag": "A",
+          "href": "/archive",
+          "current": null
+        },
+        {
+          "text": "第 2 / 2 页",
+          "tag": "SPAN",
+          "href": null,
+          "current": "page"
+        },
+        {
+          "text": "下一页",
+          "tag": "SPAN",
+          "href": null,
+          "current": null
+        }
+      ],
+      "imgAlts": []
+    },
+    "761/tags/design": {
+      "status": 200,
+      "scrollWidth": 761,
+      "clientWidth": 761,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 761,
+        "height": 1000,
+        "top": 0,
+        "right": 761,
+        "bottom": 1000,
+        "left": 0
+      },
+      "alist": {
+        "columns": "335.5px 335.5px",
+        "gap": "26px"
+      },
+      "card": {
+        "width": 335.5,
+        "height": 432.5625
+      },
+      "title": "标签：设计 · 博客 v1",
+      "canonical": "http://localhost:4321/tags/design",
+      "robots": null,
+      "description": "视觉取证与界面规范的记录。",
+      "ogType": "website",
+      "ogTitle": "标签：设计 · 博客 v1",
+      "h1": "标签：设计",
+      "lang": "zh-CN",
+      "pagination": [],
+      "imgAlts": [
+        "博客内容模型与视觉规范两份文档的示意图",
+        "一叠标有安全检查标记的文档"
+      ]
+    },
+    "761/about": {
+      "status": 200,
+      "scrollWidth": 761,
+      "clientWidth": 761,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 761,
+        "height": 1000,
+        "top": 0,
+        "right": 761,
+        "bottom": 1000,
+        "left": 0
+      },
+      "alist": null,
+      "card": null,
+      "title": "关于 · 博客 v1",
+      "canonical": "http://localhost:4321/about",
+      "robots": null,
+      "description": "介绍博客 v1 的建设目标。",
+      "ogType": "website",
+      "ogTitle": "关于 · 博客 v1",
+      "h1": "关于",
+      "lang": "zh-CN",
+      "pagination": [],
+      "imgAlts": []
+    },
+    "761/nope-does-not-exist": {
+      "status": 404,
+      "scrollWidth": 761,
+      "clientWidth": 761,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 761,
+        "height": 1000,
+        "top": 0,
+        "right": 761,
+        "bottom": 1000,
+        "left": 0
+      },
+      "alist": null,
+      "card": null,
+      "title": "页面不存在 · 博客 v1",
+      "canonical": null,
+      "robots": "noindex, follow",
+      "description": "请求的页面不存在，请返回首页或文章归档。",
+      "ogType": "website",
+      "ogTitle": "页面不存在 · 博客 v1",
+      "h1": "页面不存在",
+      "lang": "zh-CN",
+      "pagination": [],
+      "imgAlts": []
+    },
+    "760/": {
+      "status": 200,
+      "scrollWidth": 760,
+      "clientWidth": 760,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 760,
+        "height": 4087.46875,
+        "top": 0,
+        "right": 760,
+        "bottom": 4087.46875,
+        "left": 0
+      },
+      "alist": {
+        "columns": "720px",
+        "gap": "26px"
+      },
+      "card": {
+        "width": 720,
+        "height": 592.859375
+      },
+      "title": "首页 · 博客 v1",
+      "canonical": "http://localhost:4321/",
+      "robots": null,
+      "description": "记录博客 v1 的内容、设计与建设过程。",
+      "ogType": "website",
+      "ogTitle": "首页 · 博客 v1",
+      "h1": "最新文章",
+      "lang": "zh-CN",
+      "pagination": [],
+      "imgAlts": [
+        "博客内容模型与视觉规范两份文档的示意图",
+        "一叠标有安全检查标记的文档"
+      ]
+    },
+    "760/posts/blog-v1-design-contract": {
+      "status": 200,
+      "scrollWidth": 760,
+      "clientWidth": 760,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 760,
+        "height": 2707.75,
+        "top": 0,
+        "right": 760,
+        "bottom": 2707.75,
+        "left": 0
+      },
+      "alist": null,
+      "card": null,
+      "title": "博客 v1：固定内容与视觉契约 · 博客 v1",
+      "canonical": "http://localhost:4321/posts/blog-v1-design-contract",
+      "robots": null,
+      "description": "记录博客 v1 采用的静态内容方式，以及 URL、发布状态和可访问性规范的边界。",
+      "ogType": "article",
+      "ogTitle": "博客 v1：固定内容与视觉契约 · 博客 v1",
+      "h1": "博客 v1 的内容与视觉契约",
+      "lang": "zh-CN",
+      "pagination": [],
+      "imgAlts": [
+        "博客内容模型与视觉规范两份文档的示意图",
+        "构建管线示意"
+      ]
+    },
+    "760/archive": {
+      "status": 200,
+      "scrollWidth": 760,
+      "clientWidth": 760,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 760,
+        "height": 4097.0625,
+        "top": 0,
+        "right": 760,
+        "bottom": 4097.0625,
+        "left": 0
+      },
+      "alist": {
+        "columns": "720px",
+        "gap": "26px"
+      },
+      "card": {
+        "width": 720,
+        "height": 592.859375
+      },
+      "title": "文章归档 · 博客 v1",
+      "canonical": "http://localhost:4321/archive",
+      "robots": null,
+      "description": "全部已发布文章，第 1 页，共 2 页。",
+      "ogType": "website",
+      "ogTitle": "文章归档 · 博客 v1",
+      "h1": "文章归档",
+      "lang": "zh-CN",
+      "pagination": [
+        {
+          "text": "上一页",
+          "tag": "SPAN",
+          "href": null,
+          "current": null
+        },
+        {
+          "text": "第 1 / 2 页",
+          "tag": "SPAN",
+          "href": null,
+          "current": "page"
+        },
+        {
+          "text": "下一页",
+          "tag": "A",
+          "href": "/archive/page/2",
+          "current": null
+        }
+      ],
+      "imgAlts": [
+        "博客内容模型与视觉规范两份文档的示意图",
+        "一叠标有安全检查标记的文档"
+      ]
+    },
+    "760/archive/page/2": {
+      "status": 200,
+      "scrollWidth": 760,
+      "clientWidth": 760,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 760,
+        "height": 1669.21875,
+        "top": 0,
+        "right": 760,
+        "bottom": 1669.21875,
+        "left": 0
+      },
+      "alist": {
+        "columns": "720px",
+        "gap": "26px"
+      },
+      "card": {
+        "width": 720,
+        "height": 569.0625
+      },
+      "title": "文章归档（第 2 页） · 博客 v1",
+      "canonical": "http://localhost:4321/archive/page/2",
+      "robots": null,
+      "description": "全部已发布文章，第 2 页，共 2 页。",
+      "ogType": "website",
+      "ogTitle": "文章归档（第 2 页） · 博客 v1",
+      "h1": "文章归档（第 2 页）",
+      "lang": "zh-CN",
+      "pagination": [
+        {
+          "text": "上一页",
+          "tag": "A",
+          "href": "/archive",
+          "current": null
+        },
+        {
+          "text": "第 2 / 2 页",
+          "tag": "SPAN",
+          "href": null,
+          "current": "page"
+        },
+        {
+          "text": "下一页",
+          "tag": "SPAN",
+          "href": null,
+          "current": null
+        }
+      ],
+      "imgAlts": []
+    },
+    "760/tags/design": {
+      "status": 200,
+      "scrollWidth": 760,
+      "clientWidth": 760,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 760,
+        "height": 1689.015625,
+        "top": 0,
+        "right": 760,
+        "bottom": 1689.015625,
+        "left": 0
+      },
+      "alist": {
+        "columns": "720px",
+        "gap": "26px"
+      },
+      "card": {
+        "width": 720,
+        "height": 592.859375
+      },
+      "title": "标签：设计 · 博客 v1",
+      "canonical": "http://localhost:4321/tags/design",
+      "robots": null,
+      "description": "视觉取证与界面规范的记录。",
+      "ogType": "website",
+      "ogTitle": "标签：设计 · 博客 v1",
+      "h1": "标签：设计",
+      "lang": "zh-CN",
+      "pagination": [],
+      "imgAlts": [
+        "博客内容模型与视觉规范两份文档的示意图",
+        "一叠标有安全检查标记的文档"
+      ]
+    },
+    "760/about": {
+      "status": 200,
+      "scrollWidth": 760,
+      "clientWidth": 760,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 760,
+        "height": 1000,
+        "top": 0,
+        "right": 760,
+        "bottom": 1000,
+        "left": 0
+      },
+      "alist": null,
+      "card": null,
+      "title": "关于 · 博客 v1",
+      "canonical": "http://localhost:4321/about",
+      "robots": null,
+      "description": "介绍博客 v1 的建设目标。",
+      "ogType": "website",
+      "ogTitle": "关于 · 博客 v1",
+      "h1": "关于",
+      "lang": "zh-CN",
+      "pagination": [],
+      "imgAlts": []
+    },
+    "760/nope-does-not-exist": {
+      "status": 404,
+      "scrollWidth": 760,
+      "clientWidth": 760,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 760,
+        "height": 1000,
+        "top": 0,
+        "right": 760,
+        "bottom": 1000,
+        "left": 0
+      },
+      "alist": null,
+      "card": null,
+      "title": "页面不存在 · 博客 v1",
+      "canonical": null,
+      "robots": "noindex, follow",
+      "description": "请求的页面不存在，请返回首页或文章归档。",
+      "ogType": "website",
+      "ogTitle": "页面不存在 · 博客 v1",
+      "h1": "页面不存在",
+      "lang": "zh-CN",
+      "pagination": [],
+      "imgAlts": []
+    },
+    "375/": {
+      "status": 200,
+      "scrollWidth": 375,
+      "clientWidth": 375,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 3073.65625,
+        "top": 0,
+        "right": 375,
+        "bottom": 3073.65625,
+        "left": 0
+      },
+      "alist": {
+        "columns": "335px",
+        "gap": "26px"
+      },
+      "card": {
+        "width": 335,
+        "height": 400.09375
+      },
+      "title": "首页 · 博客 v1",
+      "canonical": "http://localhost:4321/",
+      "robots": null,
+      "description": "记录博客 v1 的内容、设计与建设过程。",
+      "ogType": "website",
+      "ogTitle": "首页 · 博客 v1",
+      "h1": "最新文章",
+      "lang": "zh-CN",
+      "pagination": [],
+      "imgAlts": [
+        "博客内容模型与视觉规范两份文档的示意图",
+        "一叠标有安全检查标记的文档"
+      ]
+    },
+    "375/posts/blog-v1-design-contract": {
+      "status": 200,
+      "scrollWidth": 375,
+      "clientWidth": 375,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 2432.890625,
+        "top": 0,
+        "right": 375,
+        "bottom": 2432.890625,
+        "left": 0
+      },
+      "alist": null,
+      "card": null,
+      "title": "博客 v1：固定内容与视觉契约 · 博客 v1",
+      "canonical": "http://localhost:4321/posts/blog-v1-design-contract",
+      "robots": null,
+      "description": "记录博客 v1 采用的静态内容方式，以及 URL、发布状态和可访问性规范的边界。",
+      "ogType": "article",
+      "ogTitle": "博客 v1：固定内容与视觉契约 · 博客 v1",
+      "h1": "博客 v1 的内容与视觉契约",
+      "lang": "zh-CN",
+      "pagination": [],
+      "imgAlts": [
+        "博客内容模型与视觉规范两份文档的示意图",
+        "构建管线示意"
+      ]
+    },
+    "375/archive": {
+      "status": 200,
+      "scrollWidth": 375,
+      "clientWidth": 375,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 3083.25,
+        "top": 0,
+        "right": 375,
+        "bottom": 3083.25,
+        "left": 0
+      },
+      "alist": {
+        "columns": "335px",
+        "gap": "26px"
+      },
+      "card": {
+        "width": 335,
+        "height": 400.09375
+      },
+      "title": "文章归档 · 博客 v1",
+      "canonical": "http://localhost:4321/archive",
+      "robots": null,
+      "description": "全部已发布文章，第 1 页，共 2 页。",
+      "ogType": "website",
+      "ogTitle": "文章归档 · 博客 v1",
+      "h1": "文章归档",
+      "lang": "zh-CN",
+      "pagination": [
+        {
+          "text": "上一页",
+          "tag": "SPAN",
+          "href": null,
+          "current": null
+        },
+        {
+          "text": "第 1 / 2 页",
+          "tag": "SPAN",
+          "href": null,
+          "current": "page"
+        },
+        {
+          "text": "下一页",
+          "tag": "A",
+          "href": "/archive/page/2",
+          "current": null
+        }
+      ],
+      "imgAlts": [
+        "博客内容模型与视觉规范两份文档的示意图",
+        "一叠标有安全检查标记的文档"
+      ]
+    },
+    "375/archive/page/2": {
+      "status": 200,
+      "scrollWidth": 375,
+      "clientWidth": 375,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 1331.28125,
+        "top": 0,
+        "right": 375,
+        "bottom": 1331.28125,
+        "left": 0
+      },
+      "alist": {
+        "columns": "335px",
+        "gap": "26px"
+      },
+      "card": {
+        "width": 335,
+        "height": 400.09375
+      },
+      "title": "文章归档（第 2 页） · 博客 v1",
+      "canonical": "http://localhost:4321/archive/page/2",
+      "robots": null,
+      "description": "全部已发布文章，第 2 页，共 2 页。",
+      "ogType": "website",
+      "ogTitle": "文章归档（第 2 页） · 博客 v1",
+      "h1": "文章归档（第 2 页）",
+      "lang": "zh-CN",
+      "pagination": [
+        {
+          "text": "上一页",
+          "tag": "A",
+          "href": "/archive",
+          "current": null
+        },
+        {
+          "text": "第 2 / 2 页",
+          "tag": "SPAN",
+          "href": null,
+          "current": "page"
+        },
+        {
+          "text": "下一页",
+          "tag": "SPAN",
+          "href": null,
+          "current": null
+        }
+      ],
+      "imgAlts": []
+    },
+    "375/tags/design": {
+      "status": 200,
+      "scrollWidth": 375,
+      "clientWidth": 375,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 1351.078125,
+        "top": 0,
+        "right": 375,
+        "bottom": 1351.078125,
+        "left": 0
+      },
+      "alist": {
+        "columns": "335px",
+        "gap": "26px"
+      },
+      "card": {
+        "width": 335,
+        "height": 400.09375
+      },
+      "title": "标签：设计 · 博客 v1",
+      "canonical": "http://localhost:4321/tags/design",
+      "robots": null,
+      "description": "视觉取证与界面规范的记录。",
+      "ogType": "website",
+      "ogTitle": "标签：设计 · 博客 v1",
+      "h1": "标签：设计",
+      "lang": "zh-CN",
+      "pagination": [],
+      "imgAlts": [
+        "博客内容模型与视觉规范两份文档的示意图",
+        "一叠标有安全检查标记的文档"
+      ]
+    },
+    "375/about": {
+      "status": 200,
+      "scrollWidth": 375,
+      "clientWidth": 375,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 1000,
+        "top": 0,
+        "right": 375,
+        "bottom": 1000,
+        "left": 0
+      },
+      "alist": null,
+      "card": null,
+      "title": "关于 · 博客 v1",
+      "canonical": "http://localhost:4321/about",
+      "robots": null,
+      "description": "介绍博客 v1 的建设目标。",
+      "ogType": "website",
+      "ogTitle": "关于 · 博客 v1",
+      "h1": "关于",
+      "lang": "zh-CN",
+      "pagination": [],
+      "imgAlts": []
+    },
+    "375/nope-does-not-exist": {
+      "status": 404,
+      "scrollWidth": 375,
+      "clientWidth": 375,
+      "col": {
+        "x": 0,
+        "y": 0,
+        "width": 375,
+        "height": 1000,
+        "top": 0,
+        "right": 375,
+        "bottom": 1000,
+        "left": 0
+      },
+      "alist": null,
+      "card": null,
+      "title": "页面不存在 · 博客 v1",
+      "canonical": null,
+      "robots": "noindex, follow",
+      "description": "请求的页面不存在，请返回首页或文章归档。",
+      "ogType": "website",
+      "ogTitle": "页面不存在 · 博客 v1",
+      "h1": "页面不存在",
+      "lang": "zh-CN",
+      "pagination": [],
+      "imgAlts": []
+    }
+  },
+  "typography": [
+    {
+      "width": 1440,
+      "body": {
+        "fontSize": "16px",
+        "lineHeight": "32px",
+        "letterSpacing": "0.16px",
+        "color": "rgb(51, 51, 51)"
+      },
+      "h1": {
+        "fontSize": "44px",
+        "lineHeight": "55px",
+        "letterSpacing": "-0.88px",
+        "fontWeight": "800"
+      },
+      "h2": {
+        "fontSize": "26px",
+        "lineHeight": "36.4px",
+        "letterSpacing": "-0.26px",
+        "display": "flex",
+        "gap": "14px"
+      },
+      "h3": {
+        "fontSize": "19px",
+        "lineHeight": "26.6px",
+        "fontWeight": "800"
+      },
+      "h4": {
+        "fontSize": "16px",
+        "lineHeight": "22.4px",
+        "fontWeight": "800"
+      },
+      "h5": {
+        "fontSize": "14px",
+        "lineHeight": "23.8px",
+        "fontWeight": "600"
+      },
+      "h6": {
+        "fontSize": "14px",
+        "lineHeight": "23.8px",
+        "fontWeight": "400"
+      },
+      "mark": {
+        "w": "22px",
+        "h": "3px",
+        "bg": "rgb(255, 226, 138)"
+      },
+      "label": null,
+      "brand": {
+        "fontSize": "14px",
+        "letterSpacing": "1.68px"
+      },
+      "nav": {
+        "fontSize": "14px",
+        "letterSpacing": "1.68px",
+        "color": "rgb(85, 85, 85)"
+      },
+      "footer": {
+        "fontSize": "14px",
+        "letterSpacing": "2.8px",
+        "color": "rgb(85, 85, 85)",
+        "paddingBottom": "46px"
+      },
+      "meta": {
+        "fontSize": "13px",
+        "letterSpacing": "1.56px",
+        "color": "rgb(85, 85, 85)",
+        "fontFamily": "ui-monospace, \"SF Mono\", Menlo, monospace"
+      },
+      "pre": {
+        "fontSize": "14px",
+        "lineHeight": "23.8px",
+        "padding": "18px 20px",
+        "borderRadius": "14px",
+        "backgroundColor": "rgb(22, 22, 22)"
+      },
+      "preCode": {
+        "fontSize": "12.32px",
+        "lineHeight": "20.944px"
+      },
+      "inlineCode": {
+        "fontSize": "14.08px",
+        "lineHeight": "28.16px",
+        "borderRadius": "6px",
+        "backgroundColor": "rgb(249, 240, 216)"
+      },
+      "quote": {
+        "borderLeftWidth": "3px",
+        "borderLeftColor": "rgb(255, 226, 138)",
+        "borderRadius": "0px 12px 12px 0px",
+        "padding": "14px 18px",
+        "backgroundColor": "rgb(249, 240, 216)"
+      },
+      "col": {
+        "paddingLeft": "32px",
+        "paddingRight": "32px",
+        "maxWidth": "820px"
+      },
+      "header": {
+        "paddingTop": "34px",
+        "gap": "24px"
+      },
+      "preAttrs": {
+        "tabindex": "0",
+        "role": "group",
+        "label": "代码示例"
+      }
+    },
+    {
+      "width": 768,
+      "body": {
+        "fontSize": "16px",
+        "lineHeight": "32px",
+        "letterSpacing": "0.16px",
+        "color": "rgb(51, 51, 51)"
+      },
+      "h1": {
+        "fontSize": "38.4px",
+        "lineHeight": "48px",
+        "letterSpacing": "-0.768px",
+        "fontWeight": "800"
+      },
+      "h2": {
+        "fontSize": "23.04px",
+        "lineHeight": "32.256px",
+        "letterSpacing": "-0.2304px",
+        "display": "flex",
+        "gap": "14px"
+      },
+      "h3": {
+        "fontSize": "19px",
+        "lineHeight": "26.6px",
+        "fontWeight": "800"
+      },
+      "h4": {
+        "fontSize": "16px",
+        "lineHeight": "22.4px",
+        "fontWeight": "800"
+      },
+      "h5": {
+        "fontSize": "14px",
+        "lineHeight": "23.8px",
+        "fontWeight": "600"
+      },
+      "h6": {
+        "fontSize": "14px",
+        "lineHeight": "23.8px",
+        "fontWeight": "400"
+      },
+      "mark": {
+        "w": "22px",
+        "h": "3px",
+        "bg": "rgb(255, 226, 138)"
+      },
+      "label": null,
+      "brand": {
+        "fontSize": "14px",
+        "letterSpacing": "1.68px"
+      },
+      "nav": {
+        "fontSize": "14px",
+        "letterSpacing": "1.68px",
+        "color": "rgb(85, 85, 85)"
+      },
+      "footer": {
+        "fontSize": "14px",
+        "letterSpacing": "2.8px",
+        "color": "rgb(85, 85, 85)",
+        "paddingBottom": "46px"
+      },
+      "meta": {
+        "fontSize": "13px",
+        "letterSpacing": "1.56px",
+        "color": "rgb(85, 85, 85)",
+        "fontFamily": "ui-monospace, \"SF Mono\", Menlo, monospace"
+      },
+      "pre": {
+        "fontSize": "14px",
+        "lineHeight": "23.8px",
+        "padding": "18px 20px",
+        "borderRadius": "14px",
+        "backgroundColor": "rgb(22, 22, 22)"
+      },
+      "preCode": {
+        "fontSize": "12.32px",
+        "lineHeight": "20.944px"
+      },
+      "inlineCode": {
+        "fontSize": "14.08px",
+        "lineHeight": "28.16px",
+        "borderRadius": "6px",
+        "backgroundColor": "rgb(249, 240, 216)"
+      },
+      "quote": {
+        "borderLeftWidth": "3px",
+        "borderLeftColor": "rgb(255, 226, 138)",
+        "borderRadius": "0px 12px 12px 0px",
+        "padding": "14px 18px",
+        "backgroundColor": "rgb(249, 240, 216)"
+      },
+      "col": {
+        "paddingLeft": "32px",
+        "paddingRight": "32px",
+        "maxWidth": "820px"
+      },
+      "header": {
+        "paddingTop": "34px",
+        "gap": "24px"
+      },
+      "preAttrs": {
+        "tabindex": "0",
+        "role": "group",
+        "label": "代码示例"
+      }
+    },
+    {
+      "width": 761,
+      "body": {
+        "fontSize": "16px",
+        "lineHeight": "32px",
+        "letterSpacing": "0.16px",
+        "color": "rgb(51, 51, 51)"
+      },
+      "h1": {
+        "fontSize": "38.05px",
+        "lineHeight": "47.5625px",
+        "letterSpacing": "-0.761px",
+        "fontWeight": "800"
+      },
+      "h2": {
+        "fontSize": "22.83px",
+        "lineHeight": "31.962px",
+        "letterSpacing": "-0.2283px",
+        "display": "flex",
+        "gap": "14px"
+      },
+      "h3": {
+        "fontSize": "19px",
+        "lineHeight": "26.6px",
+        "fontWeight": "800"
+      },
+      "h4": {
+        "fontSize": "16px",
+        "lineHeight": "22.4px",
+        "fontWeight": "800"
+      },
+      "h5": {
+        "fontSize": "14px",
+        "lineHeight": "23.8px",
+        "fontWeight": "600"
+      },
+      "h6": {
+        "fontSize": "14px",
+        "lineHeight": "23.8px",
+        "fontWeight": "400"
+      },
+      "mark": {
+        "w": "22px",
+        "h": "3px",
+        "bg": "rgb(255, 226, 138)"
+      },
+      "label": null,
+      "brand": {
+        "fontSize": "14px",
+        "letterSpacing": "1.68px"
+      },
+      "nav": {
+        "fontSize": "14px",
+        "letterSpacing": "1.68px",
+        "color": "rgb(85, 85, 85)"
+      },
+      "footer": {
+        "fontSize": "14px",
+        "letterSpacing": "2.8px",
+        "color": "rgb(85, 85, 85)",
+        "paddingBottom": "46px"
+      },
+      "meta": {
+        "fontSize": "13px",
+        "letterSpacing": "1.56px",
+        "color": "rgb(85, 85, 85)",
+        "fontFamily": "ui-monospace, \"SF Mono\", Menlo, monospace"
+      },
+      "pre": {
+        "fontSize": "14px",
+        "lineHeight": "23.8px",
+        "padding": "18px 20px",
+        "borderRadius": "14px",
+        "backgroundColor": "rgb(22, 22, 22)"
+      },
+      "preCode": {
+        "fontSize": "12.32px",
+        "lineHeight": "20.944px"
+      },
+      "inlineCode": {
+        "fontSize": "14.08px",
+        "lineHeight": "28.16px",
+        "borderRadius": "6px",
+        "backgroundColor": "rgb(249, 240, 216)"
+      },
+      "quote": {
+        "borderLeftWidth": "3px",
+        "borderLeftColor": "rgb(255, 226, 138)",
+        "borderRadius": "0px 12px 12px 0px",
+        "padding": "14px 18px",
+        "backgroundColor": "rgb(249, 240, 216)"
+      },
+      "col": {
+        "paddingLeft": "32px",
+        "paddingRight": "32px",
+        "maxWidth": "820px"
+      },
+      "header": {
+        "paddingTop": "34px",
+        "gap": "24px"
+      },
+      "preAttrs": {
+        "tabindex": "0",
+        "role": "group",
+        "label": "代码示例"
+      }
+    },
+    {
+      "width": 760,
+      "body": {
+        "fontSize": "15px",
+        "lineHeight": "29.25px",
+        "letterSpacing": "0.15px",
+        "color": "rgb(51, 51, 51)"
+      },
+      "h1": {
+        "fontSize": "38px",
+        "lineHeight": "47.5px",
+        "letterSpacing": "-0.76px",
+        "fontWeight": "800"
+      },
+      "h2": {
+        "fontSize": "22.8px",
+        "lineHeight": "31.92px",
+        "letterSpacing": "-0.228px",
+        "display": "flex",
+        "gap": "14px"
+      },
+      "h3": {
+        "fontSize": "17px",
+        "lineHeight": "23.8px",
+        "fontWeight": "800"
+      },
+      "h4": {
+        "fontSize": "15px",
+        "lineHeight": "21px",
+        "fontWeight": "800"
+      },
+      "h5": {
+        "fontSize": "14px",
+        "lineHeight": "23.8px",
+        "fontWeight": "600"
+      },
+      "h6": {
+        "fontSize": "14px",
+        "lineHeight": "23.8px",
+        "fontWeight": "400"
+      },
+      "mark": {
+        "w": "22px",
+        "h": "3px",
+        "bg": "rgb(255, 226, 138)"
+      },
+      "label": null,
+      "brand": {
+        "fontSize": "12px",
+        "letterSpacing": "0.96px"
+      },
+      "nav": {
+        "fontSize": "10px",
+        "letterSpacing": "normal",
+        "color": "rgb(85, 85, 85)"
+      },
+      "footer": {
+        "fontSize": "11px",
+        "letterSpacing": "1.32px",
+        "color": "rgb(85, 85, 85)",
+        "paddingBottom": "32px"
+      },
+      "meta": {
+        "fontSize": "13px",
+        "letterSpacing": "1.56px",
+        "color": "rgb(85, 85, 85)",
+        "fontFamily": "ui-monospace, \"SF Mono\", Menlo, monospace"
+      },
+      "pre": {
+        "fontSize": "14px",
+        "lineHeight": "23.8px",
+        "padding": "18px 20px",
+        "borderRadius": "14px",
+        "backgroundColor": "rgb(22, 22, 22)"
+      },
+      "preCode": {
+        "fontSize": "12.32px",
+        "lineHeight": "20.944px"
+      },
+      "inlineCode": {
+        "fontSize": "13.2px",
+        "lineHeight": "25.74px",
+        "borderRadius": "6px",
+        "backgroundColor": "rgb(249, 240, 216)"
+      },
+      "quote": {
+        "borderLeftWidth": "3px",
+        "borderLeftColor": "rgb(255, 226, 138)",
+        "borderRadius": "0px 12px 12px 0px",
+        "padding": "14px 18px",
+        "backgroundColor": "rgb(249, 240, 216)"
+      },
+      "col": {
+        "paddingLeft": "20px",
+        "paddingRight": "20px",
+        "maxWidth": "820px"
+      },
+      "header": {
+        "paddingTop": "22px",
+        "gap": "14px"
+      },
+      "preAttrs": {
+        "tabindex": "0",
+        "role": "group",
+        "label": "代码示例"
+      }
+    },
+    {
+      "width": 375,
+      "body": {
+        "fontSize": "15px",
+        "lineHeight": "29.25px",
+        "letterSpacing": "0.15px",
+        "color": "rgb(51, 51, 51)"
+      },
+      "h1": {
+        "fontSize": "30px",
+        "lineHeight": "37.5px",
+        "letterSpacing": "-0.6px",
+        "fontWeight": "800"
+      },
+      "h2": {
+        "fontSize": "21px",
+        "lineHeight": "29.4px",
+        "letterSpacing": "-0.21px",
+        "display": "flex",
+        "gap": "14px"
+      },
+      "h3": {
+        "fontSize": "17px",
+        "lineHeight": "23.8px",
+        "fontWeight": "800"
+      },
+      "h4": {
+        "fontSize": "15px",
+        "lineHeight": "21px",
+        "fontWeight": "800"
+      },
+      "h5": {
+        "fontSize": "14px",
+        "lineHeight": "23.8px",
+        "fontWeight": "600"
+      },
+      "h6": {
+        "fontSize": "14px",
+        "lineHeight": "23.8px",
+        "fontWeight": "400"
+      },
+      "mark": {
+        "w": "22px",
+        "h": "3px",
+        "bg": "rgb(255, 226, 138)"
+      },
+      "label": null,
+      "brand": {
+        "fontSize": "12px",
+        "letterSpacing": "0.96px"
+      },
+      "nav": {
+        "fontSize": "10px",
+        "letterSpacing": "normal",
+        "color": "rgb(85, 85, 85)"
+      },
+      "footer": {
+        "fontSize": "11px",
+        "letterSpacing": "1.32px",
+        "color": "rgb(85, 85, 85)",
+        "paddingBottom": "32px"
+      },
+      "meta": {
+        "fontSize": "13px",
+        "letterSpacing": "1.56px",
+        "color": "rgb(85, 85, 85)",
+        "fontFamily": "ui-monospace, \"SF Mono\", Menlo, monospace"
+      },
+      "pre": {
+        "fontSize": "14px",
+        "lineHeight": "23.8px",
+        "padding": "18px 20px",
+        "borderRadius": "14px",
+        "backgroundColor": "rgb(22, 22, 22)"
+      },
+      "preCode": {
+        "fontSize": "12.32px",
+        "lineHeight": "20.944px"
+      },
+      "inlineCode": {
+        "fontSize": "13.2px",
+        "lineHeight": "25.74px",
+        "borderRadius": "6px",
+        "backgroundColor": "rgb(249, 240, 216)"
+      },
+      "quote": {
+        "borderLeftWidth": "3px",
+        "borderLeftColor": "rgb(255, 226, 138)",
+        "borderRadius": "0px 12px 12px 0px",
+        "padding": "14px 18px",
+        "backgroundColor": "rgb(249, 240, 216)"
+      },
+      "col": {
+        "paddingLeft": "20px",
+        "paddingRight": "20px",
+        "maxWidth": "820px"
+      },
+      "header": {
+        "paddingTop": "22px",
+        "gap": "14px"
+      },
+      "preAttrs": {
+        "tabindex": "0",
+        "role": "group",
+        "label": "代码示例"
+      }
+    }
+  ],
+  "states": {
+    "card": {
+      "before": {
+        "transform": "matrix(1, 0, 0, 1, 0, 0)",
+        "shadow": "none",
+        "border": "rgb(232, 232, 232)",
+        "cover": null,
+        "titleBg": "0% 42%"
+      },
+      "after": {
+        "transform": "matrix(1, 0, 0, 1, 0, -5)",
+        "shadow": "rgba(0, 0, 0, 0.04) 0px 3px 6px 0px, rgba(0, 0, 0, 0.18) 0px 26px 48px -18px",
+        "border": "rgb(213, 213, 213)",
+        "cover": null,
+        "titleBg": "100% 42%"
+      }
+    },
+    "prevDisabled": {
+      "text": "上一页",
+      "tag": "SPAN",
+      "href": null,
+      "tabindex": null,
+      "opacity": "1",
+      "color": "rgb(85, 85, 85)",
+      "border": "rgb(232, 232, 232)"
+    },
+    "nextLink": {
+      "text": "下一页",
+      "href": "/archive/page/2",
+      "w": 63.453125,
+      "h": 33.59375
+    },
+    "tabOrder": [
+      {
+        "text": "跳至正文",
+        "outline": "2px solid rgb(26, 26, 26)",
+        "offset": "2px"
+      },
+      {
+        "text": "博客 v1",
+        "outline": "2px solid rgb(26, 26, 26)",
+        "offset": "2px"
+      },
+      {
+        "text": "首页",
+        "outline": "2px solid rgb(26, 26, 26)",
+        "offset": "2px"
+      },
+      {
+        "text": "归档",
+        "outline": "2px solid rgb(26, 26, 26)",
+        "offset": "2px"
+      },
+      {
+        "text": "关于",
+        "outline": "2px solid rgb(26, 26, 26)",
+        "offset": "2px"
+      },
+      {
+        "text": "博客 v1 的内容与视觉契约",
+        "outline": "2px solid rgb(26, 26, 26)",
+        "offset": "2px"
+      },
+      {
+        "text": "架构",
+        "outline": "2px solid rgb(26, 26, 26)",
+        "offset": "2px"
+      },
+      {
+        "text": "设计",
+        "outline": "2px solid rgb(26, 26, 26)",
+        "offset": "2px"
+      }
+    ],
+    "focusCard": {
+      "transform": "matrix(1, 0, 0, 1, 0, -5)",
+      "shadow": true,
+      "cover": "matrix(1.04, 0, 0, 1.04, 0, 0)",
+      "titleBg": "100% 42%",
+      "linkOutline": "rgb(26, 26, 26) solid 2px"
+    },
+    "reduce": {
+      "cardDuration": "0.01s",
+      "scrollBehavior": "auto"
+    },
+    "touch": {
+      "transform": "matrix(1, 0, 0, 1, 0, 0)",
+      "shadow": "none",
+      "cover": "matrix(1, 0, 0, 1, 0, 0)"
+    }
+  },
+  "feeds": {
+    "rssStatus": 200,
+    "rssType": "application/xml; charset=utf-8",
+    "rssItems": 8,
+    "sitemapStatus": 200,
+    "sitemapType": "application/xml; charset=utf-8",
+    "sitemapUrls": 15,
+    "draftLeak": false
+  },
+  "negative": {
+    "/posts/draft-editorial-workflow": 404,
+    "/archive/page/0": 404,
+    "/archive/page/1": 404,
+    "/archive/page/9": 404,
+    "/tags/unknown-tag": 404,
+    "/posts/not-a-post": 404
+  }
+}

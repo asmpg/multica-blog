@@ -1,0 +1,32 @@
+---
+import type { PageSEO } from '../data/contract';
+
+/** 404 额外带 noindex；成功页面不带。 */
+type SeoInput = PageSEO & { noindex?: boolean };
+
+interface Props {
+  seo: SeoInput;
+}
+
+const { seo } = Astro.props;
+---
+
+<title>{seo.title}</title>
+<meta name="description" content={seo.description} />
+{
+  seo.noindex ? (
+    <meta name="robots" content="noindex, follow" />
+  ) : (
+    <link rel="canonical" href={seo.canonical} />
+  )
+}
+<meta property="og:type" content={seo.ogType} />
+<meta property="og:title" content={seo.ogTitle} />
+<meta property="og:description" content={seo.ogDescription} />
+{!seo.noindex && <meta property="og:url" content={seo.canonical} />}
+<meta property="og:image" content={seo.ogImage} />
+<meta property="og:image:alt" content={seo.ogImageAlt} />
+<meta property="og:image:width" content={String(seo.ogImageWidth)} />
+<meta property="og:image:height" content={String(seo.ogImageHeight)} />
+<meta property="og:locale" content="zh_CN" />
+<meta name="twitter:card" content="summary_large_image" />

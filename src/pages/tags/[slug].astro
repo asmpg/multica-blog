@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../../components/BaseLayout.astro';
+import PostList from '../../components/PostList.astro';
+import { getTagPages } from '../../data/contract';
+
+export function getStaticPaths() {
+  // 只有至少一篇公开文章的标签才有页面（content-model §5），由内容层给出。
+  return getTagPages().map((entry) => ({
+    params: { slug: entry.tag.slug },
+    props: { tagPage: entry },
+  }));
+}
+
+const { tagPage } = Astro.props;
+---
+
+<BaseLayout seo={tagPage.seo} current="archive">
+  <section class="section">
+    <h1 class="label">标签：{tagPage.tag.name}</h1>
+    {tagPage.tag.description && <p class="section-desc">{tagPage.tag.description}</p>}
+    <PostList posts={tagPage.posts} label={`标签 ${tagPage.tag.name} 下的文章`} />
+  </section>
+</BaseLayout>

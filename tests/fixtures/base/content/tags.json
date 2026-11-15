@@ -1,0 +1,5 @@
+[
+  { "slug": "architecture", "name": "架构", "description": "架构记录。" },
+  { "slug": "design", "name": "设计" },
+  { "slug": "build", "name": "构建" }
+]

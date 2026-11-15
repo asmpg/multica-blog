@@ -1,0 +1,12 @@
+{
+  "name": "博客 v1",
+  "description": "记录博客 v1 的内容、设计与建设过程。",
+  "language": "zh-CN",
+  "defaultAuthorId": "blog-team",
+  "defaultOgImage": {
+    "src": "/content/site/og.png",
+    "alt": "博客 v1 站点标识",
+    "width": 1200,
+    "height": 630
+  }
+}

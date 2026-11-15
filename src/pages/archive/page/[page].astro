@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../../../components/BaseLayout.astro';
+import PostList from '../../../components/PostList.astro';
+import Pagination from '../../../components/Pagination.astro';
+import { getArchivePages } from '../../../data/contract';
+
+export function getStaticPaths() {
+  // 分页集合由内容层给出（content-model §5）：第一页是 /archive，其余 /archive/page/<n>。
+  return getArchivePages()
+    .filter((entry) => entry.page > 1)
+    .map((entry) => ({ params: { page: String(entry.page) }, props: { archive: entry } }));
+}
+
+const { archive } = Astro.props;
+---
+
+<BaseLayout seo={archive.seo} current="archive">
+  <section class="section">
+    <h1 class="label">文章归档（第 {archive.page} 页）</h1>
+    <PostList posts={archive.posts} label={`文章归档第 ${archive.page} 页`} />
+    <Pagination archive={archive} />
+  </section>
+</BaseLayout>

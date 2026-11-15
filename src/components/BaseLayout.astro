@@ -1,0 +1,44 @@
+---
+import '../../styles/tokens.css';
+import '../../styles/global.css';
+import '../../styles/components.css';
+import '../../styles/article.css';
+
+import Seo from './Seo.astro';
+import SiteHeader from './SiteHeader.astro';
+import SiteFooter from './SiteFooter.astro';
+import { getSite } from '../data/contract';
+import type { PageSEO } from '../data/contract';
+
+interface Props {
+  seo: PageSEO;
+  /** 当前页面用于 aria-current=page；文章页与 404 不标记导航项。 */
+  current?: 'home' | 'archive' | 'about' | null;
+}
+
+const { seo, current = null } = Astro.props;
+const site = getSite();
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <Seo seo={seo} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳至正文</a>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-fade" aria-hidden="true"></div>
+    <div class="field" aria-hidden="true"><span class="b1"></span><span class="b2"></span></div>
+    <div class="col">
+      <SiteHeader site={site} current={current} />
+      <main id="main" tabindex="-1">
+        <slot />
+      </main>
+      <SiteFooter site={site} />
+    </div>
+  </body>
+</html>

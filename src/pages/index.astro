@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../components/BaseLayout.astro';
+import PostList from '../components/PostList.astro';
+import { getHome } from '../data/contract';
+
+const home = getHome();
+---
+
+<BaseLayout seo={home.seo} current="home">
+  <section class="section">
+    <h1 class="label">最新文章</h1>
+    {home.posts.length > 0 ? <PostList posts={home.posts} label="最新文章" /> : <p class="empty">暂无文章</p>}
+    <div class="more-block">
+      <a class="more tap" href="/archive">全部文章<span class="more-arrow" aria-hidden="true">→</span></a>
+    </div>
+  </section>
+</BaseLayout>
